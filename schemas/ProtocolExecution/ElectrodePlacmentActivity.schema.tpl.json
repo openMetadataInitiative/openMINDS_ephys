@@ -1,0 +1,44 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacmentActivity",
+    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "required": [
+        "anestheisa",
+        "electrodes",
+        "devices"
+    ],
+    "properties": {
+        "anesthesia": {
+            "type": "string",
+            "_instruction": "Anesthesia used during the surgery"
+        },
+        "startTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was begun"
+        },
+        "endTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was completed"
+        },
+        "electrodes": {
+            "_instruction": "Add the electrodes used by this activty",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/electrodearray"
+            ]
+        },
+        "devices": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add all the devices used by this activity",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Device"
+            ]
+        }
+    }
+}

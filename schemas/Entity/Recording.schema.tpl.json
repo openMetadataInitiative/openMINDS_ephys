@@ -1,0 +1,116 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Recording",
+    "required": [
+        "internalIdentifier",
+        "channel",
+        "timeStep",
+        "sweep",
+        "repetition"
+    ],
+    "properties": {
+        "internalIdentifier": {
+            "type": "string",
+            "_instruction": "The identifier of the trace generation metadata"
+        },
+        "channel": {
+            "type": "array",
+            "maxItems": 1,
+            "minItems": 1,
+            "items": {
+                "type": "integer"
+            },
+            "_instruction": "Recording channel of trace"
+        },
+        "timeStep": {
+            "_instruction": "Time step (inverted sampling frequency) of data",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "sweep": {
+            "type": "array",
+            "maxItems": 1,
+            "minItems": 1,
+            "items": {
+                "type": "integer"
+            },
+            "_instruction": "Sweep number of the trace."
+        },
+        "repetition": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "type": "integer"
+            },
+            "_instruction": "Number of the repetition of the stimulus."
+        },
+        "projectName": {
+            "type": "string",
+            "_instruction": "Name of the project that the trace was recorded for"
+        },
+        "retrivalDate": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was completed"
+        },
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description of this 'trace' recording."
+        },
+        "adcGain": {
+            "type": "array",
+            "maxItems": 1,
+            "minItems": 1,
+            "items": {
+                "type": "number"
+            },
+            "_instruction": "Gain of analog-to-digital converter"
+        },
+        "dacGain": {
+            "type": "array",
+            "maxItems": 1,
+            "minItems": 1,
+            "items": {
+                "type": "number"
+            },
+            "_instruction": "Gain of digital-to-analog converter"
+        },
+        "dacScal": {
+            "type": "array",
+            "maxItems": 1,
+            "minItems": 1,
+            "items": {
+                "type": "number"
+            },
+            "_instruction": "Scale of digital-to-analog converter"
+        },
+        "devices": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add all the devices used for this recording",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Device"
+            ]
+        },
+        "unitOfMeasurement": {
+            "_instruction": "Add the unit of measurement of this recording.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
+            ]
+        },
+        "datalocation": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add all the locations that the data attached to the entity is published",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/File",
+                "https://openminds.ebrains.eu/core/FileBundle"
+            ]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/BrainSlicingActivty",
+    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "required": [
+        "solution",
+        "cuttingThickness",
+        "slicingAngle"
+    ],
+    "properties": {
+        "solution": {
+            "type": "string",
+            "_instruction": "Solution in which the brain was sliced (e.g. Ringer's solution)"
+        },
+        "cuttingThickness": {
+            "_instruction": "Slice thickness",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "slicingAngle": {
+            "_instruction": "Slicing angle of the brain",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "startTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was begun"
+        },
+        "endTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was completed"
+        },
+        "sliceOrientation": {
+            "_instruction": "Slicing orientation of the brain",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/AnatomicalAxesOrientation"
+            ]
+        }
+    }
+}

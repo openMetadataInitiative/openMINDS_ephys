@@ -1,0 +1,61 @@
+{
+  "_type": "https://openminds.ebrains.eu/ephys/PatchedCell",
+  "_extends": "https://openminds.ebrains.eu/core/TissueSampleState",
+  "required": [],
+  "properties": {
+    "pipetteIdentifier": {
+      "type": "string",
+      "_instruction": "Identifier for the recording pipette"
+    },
+    "startMembranePotential": {
+      "_instruction": "Membrane potential of patched cell at the beginning of recording",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "endMembranePotential": {
+      "_instruction": "Membrane potential of patched cell at the end of recording",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "sealResistance": {
+      "_instruction": "Seal resistance of patch",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "pipetteResistance": {
+      "_instruction": "Resistance of pipette used",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "liquidJunctionPotential": {
+      "_instruction": "Liquid junction potential of patch",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "chlorideReversalPotential": {
+      "_instruction": "The chloride reversal potential calculated from the intracellular solution of the pipette",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ]
+    },
+    "pipetteSolution": {
+      "type": "string",
+      "_instruction": "Solution used to fill the pipette"
+    },
+    "labelingCompound": {
+      "type": "string",
+      "_instruction": "The compound used in the pipette to label the cell"
+    }
+  }
+}

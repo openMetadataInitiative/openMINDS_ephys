@@ -1,0 +1,50 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Craniotomy",
+    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "required": [
+        "windowType",
+        "anesthesia",
+        "diameter"
+    ],
+    "properties": {
+        "windowType": {
+            "_instruction": "Add the the type of window used by this craniotomy.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/WindowType"
+            ]
+        },
+        "anesthesia": {
+            "type": "string",
+            "_instruction": "Anesthesia used during the surgery"
+        },
+        "diameter": {
+            "_instruction": "Diameter of the window",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "fluorescenceLabelling": {
+            "type": "string",
+            "_instruction": "Details of the labelling method (for example, injection of a viral construct)"
+        },
+        "startTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was begun"
+        },
+        "endTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was completed"
+        },
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description for this craniotomy"
+        }
+    }
+}

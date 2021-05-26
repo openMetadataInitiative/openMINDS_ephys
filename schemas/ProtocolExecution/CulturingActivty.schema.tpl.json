@@ -1,0 +1,42 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/CulturingActivty",
+    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "required": [
+        "CultureType",
+        "CultureAge",
+        "CultureSolution"
+    ],
+    "properties": {
+        "CultureType": {
+            "_instruction": "Type of culture (e.g. primary, secondary)",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/sands/CultureType"
+            ]
+        },
+        "CultureAge": {
+            "_instruction": "Age of culture at time of data collection",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "CultureSolution": {
+            "type": "string",
+            "_instruction": "Solution culture maintained in prior to experiment"
+        },
+        "startTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was begun"
+        },
+        "endTime": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which the brain slicing was completed"
+        }
+    }
+}

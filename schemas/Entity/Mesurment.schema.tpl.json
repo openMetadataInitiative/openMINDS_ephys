@@ -1,0 +1,30 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Mesurment",
+    "required": [
+        "value",
+        "timestamp",
+        "measurementType"
+    ],
+    "properties": {
+        "value": {
+            "_instruction": "Time step (inverted sampling frequency) of data",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "timestamp": {
+            "_formats": [
+                "date-time"
+            ],
+            "type": "string",
+            "_instruction": "Date and time at which this measurment have been recorded."
+        },
+        "measurementType": {
+            "_instruction": "Add the type of this measurment.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/MeasurementType"
+            ]
+        }
+    }
+}

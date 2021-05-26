@@ -1,0 +1,50 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Device",
+    "required": [
+        "deviceType",
+        "manufacturer",
+        "modelName",
+        "internalIdentifier"
+    ],
+    "properties": {
+        "deviceType": {
+            "type": "string",
+            "_instruction": "Reference to a device type"
+        },
+        "internalIdentifier": {
+            "type": "string",
+            "_instruction": "Enter the identifier of this specimen that is used within the corresponding data."
+        },
+        "manufacturer": {
+            "type": "string",
+            "_instruction": "The manufacturer or supplier providing the item."
+        },
+        "modelName": {
+            "type": "string",
+            "_instruction": "The identifier of the item (from the manufacturer)."
+        },
+        "serialNumber": {
+            "type": "string",
+            "_instruction": "specific for the model, provided by the manufacturer or institution."
+        },
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description of this device."
+        },
+        "software": {
+            "_instruction": "Software version used by this device",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SoftwareVersion"
+            ]
+        },
+        "parameterSet": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add all important parameters grouped in context-specific sets that were used in this device.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/ParameterSet"
+            ]
+        }
+    }
+}
