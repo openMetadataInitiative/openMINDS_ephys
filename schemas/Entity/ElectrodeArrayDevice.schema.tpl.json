@@ -2,8 +2,7 @@
     "_type": "https://openminds.ebrains.eu/ephys/ElectrodeArray",
     "_extends": "https://openminds.ebrains.eu/core/Device",
     "required": [
-        "electrodes",
-        "internalIdentifier"
+        "electrodes"
     ],
     "properties": {
         "electrodes": {
