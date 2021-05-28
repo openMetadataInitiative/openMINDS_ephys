@@ -7,7 +7,7 @@
         "diameter"
     ],
     "properties": {
-        "windowType": {
+        "CranialWindowType": {
             "_instruction": "Add the the type of window used by this craniotomy.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/WindowType"

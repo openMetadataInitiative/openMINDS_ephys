@@ -1,0 +1,16 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/ElectrodeArray",
+    "_extends": "https://openminds.ebrains.eu/core/Device",
+    "required": [
+        "electrodes",
+        "internalIdentifier"
+    ],
+    "properties": {
+        "electrodes": {
+            "_instruction": "Electrode array location used for this elletrod array device.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/sands/ElectrodeArray"
+            ]
+        }
+    }
+}

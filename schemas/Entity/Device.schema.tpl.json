@@ -8,8 +8,10 @@
     ],
     "properties": {
         "deviceType": {
-            "type": "string",
-            "_instruction": "Reference to a device type"
+            "_instruction": "Reference to a device type",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/DeviceType"
+            ]
         },
         "internalIdentifier": {
             "type": "string",
