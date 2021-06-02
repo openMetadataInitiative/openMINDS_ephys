@@ -10,7 +10,7 @@
         "CranialWindowType": {
             "_instruction": "Add the the type of window used by this craniotomy.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/WindowType"
+                "https://openminds.ebrains.eu/controlledTerms/CranialWindowType"
             ]
         },
         "anesthesia": {
