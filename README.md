@@ -1,3 +1,7 @@
+<a href="https://github.com/HumanBrainProject/openMINDS_ephys/blob/694b1773f35151085cfb029f7e2178f776e86463/img/light_openMINDS-ephys-logo.png">
+    <img src="https://github.com/HumanBrainProject/openMINDS_ephys/blob/694b1773f35151085cfb029f7e2178f776e86463/img/light_openMINDS-ephys-logo.png" alt="openMINDS computation logo" title="openMINDS computation" align="right" height="70" />
+</a>
+
 # openMINDS_ephys
 A metadata model for electrophysiology experiments; an openMINDS extension
 
