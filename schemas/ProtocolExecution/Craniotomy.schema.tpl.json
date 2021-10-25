@@ -28,20 +28,6 @@
             "type": "string",
             "_instruction": "Details of the labelling method (for example, injection of a viral construct)"
         },
-        "startTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was begun"
-        },
-        "endTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was completed"
-        },
         "description": {
             "type": "string",
             "_instruction": "Enter a description for this craniotomy"

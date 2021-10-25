@@ -25,25 +25,15 @@
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"
             ]
         },
-        "startTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was begun"
-        },
-        "endTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was completed"
-        },
-        "sliceOrientation": {
+        "slicingPlane": {
             "_instruction": "Slicing orientation of the brain",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/AnatomicalAxesOrientation"
+                "https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane"
             ]
+        },
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description for this slicing activty"
         }
     }
 }

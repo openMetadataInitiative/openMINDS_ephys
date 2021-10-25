@@ -11,24 +11,11 @@
             "type": "string",
             "_instruction": "Anesthesia used during the surgery"
         },
-        "startTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was begun"
-        },
-        "endTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was completed"
-        },
         "electrodes": {
             "_instruction": "Add the electrodes used by this activty",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/electrodearray"
+                "https://openminds.ebrains.eu/ephys/Electrodearray",
+                "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         },
         "devices": {
@@ -39,6 +26,10 @@
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/Device"
             ]
+        },
+        "description": {
+            "type": "string",
+            "_instruction": "Enter a description for this activity"
         }
     }
 }

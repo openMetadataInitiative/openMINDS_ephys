@@ -1,0 +1,38 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Pippete",
+    "_extends": "https://openminds.ebrains.eu/ephys/Device",
+    "required": [
+        "pipetteIdentifier",
+        "pipetteResistance",
+        "pipetteSolution"
+    ],
+    "properties": {
+        "pipetteIdentifier": {
+            "type": "string",
+            "_instruction": "Identifier for the recording pipette"
+        },
+        "pipetteResistance": {
+            "_instruction": "Resistance of pipette used",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "pipetteSolution": {
+            "type": "string",
+            "_instruction": "Solution used to fill the pipette"
+        },
+        "outerDiameter": {
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ],
+            "_instruction": "Outer diameter of the pipette"
+        },
+        "internalDiameter": {
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ],
+            "_instruction": "Internal diameter of the pipette"
+        }
+    }
+}

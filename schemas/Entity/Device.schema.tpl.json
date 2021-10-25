@@ -15,7 +15,7 @@
         },
         "internalIdentifier": {
             "type": "string",
-            "_instruction": "Enter the identifier of this specimen that is used within the corresponding data."
+            "_instruction": "Enter the identifier of this Device that is used within the corresponding data."
         },
         "manufacturer": {
             "type": "string",

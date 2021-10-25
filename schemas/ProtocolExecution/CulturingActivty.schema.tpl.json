@@ -24,19 +24,9 @@
             "type": "string",
             "_instruction": "Solution culture maintained in prior to experiment"
         },
-        "startTime": {
-            "_formats": [
-                "date-time"
-            ],
+        "description": {
             "type": "string",
-            "_instruction": "Date and time at which the brain slicing was begun"
-        },
-        "endTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was completed"
+            "_instruction": "Enter a description for this activity"
         }
     }
 }
