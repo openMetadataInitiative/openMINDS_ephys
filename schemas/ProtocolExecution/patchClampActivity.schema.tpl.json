@@ -8,10 +8,10 @@
     "properties": {
         "bathSolution": {
             "type": "string",
-            "_instruction": "Solution used in the bath while recording"
+            "_instruction": "Solution used in the bath"
         },
         "temperature": {
-            "_instruction": "Recording temperature",
+            "_instruction": "Bath temperature",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"

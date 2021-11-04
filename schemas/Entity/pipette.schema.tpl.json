@@ -1,5 +1,5 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/Pippete",
+    "_type": "https://openminds.ebrains.eu/ephys/Pipette",
     "_extends": "https://openminds.ebrains.eu/ephys/Device",
     "required": [
         "pipetteIdentifier",
