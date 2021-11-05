@@ -1,12 +1,17 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/BrainSlicingActivity",
     "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
-    "required": [
-        "solution",
-        "cuttingThickness",
-        "slicingAngle"
-    ],
     "properties": {
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/TissueSampleState"
+            ]
+        },
         "solution": {
             "type": "string",
             "_instruction": "Solution in which the brain was sliced (e.g. Ringer's solution)"
@@ -30,10 +35,6 @@
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane"
             ]
-        },
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description for this slicing activty"
         }
     }
 }

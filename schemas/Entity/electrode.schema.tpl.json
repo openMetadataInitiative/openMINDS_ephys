@@ -18,6 +18,15 @@
         "internalIdentifier": {
             "type": "string",
             "_instruction": "Enter the identifier used for this electrode within the file it is stored in."
+        },
+        "amplifier": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Amplifier used with this electrode",
+            "linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Device"
+            ]
         }
     }
 }

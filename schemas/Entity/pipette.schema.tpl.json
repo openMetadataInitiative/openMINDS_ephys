@@ -2,15 +2,10 @@
     "_type": "https://openminds.ebrains.eu/ephys/Pipette",
     "_extends": "https://openminds.ebrains.eu/ephys/Device",
     "required": [
-        "pipetteIdentifier",
         "pipetteResistance",
         "pipetteSolution"
     ],
     "properties": {
-        "pipetteIdentifier": {
-            "type": "string",
-            "_instruction": "Identifier for the recording pipette"
-        },
         "pipetteResistance": {
             "_instruction": "Resistance of pipette used",
             "_embeddedTypes": [

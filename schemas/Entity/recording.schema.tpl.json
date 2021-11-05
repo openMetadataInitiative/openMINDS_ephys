@@ -1,91 +1,40 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/Recording",
     "required": [
-        "internalIdentifier",
-        "channel",
-        "timeStep",
-        "sweep",
-        "repetition"
+        "timeStep"
     ],
     "properties": {
         "internalIdentifier": {
             "type": "string",
-            "_instruction": "The identifier of the trace generation metadata"
+            "_instruction": "Enter any internal identifier used for this recording"
         },
         "channel": {
             "type": "array",
             "maxItems": 1,
             "minItems": 1,
             "items": {
-                "type": "integer"
+                "type": "string"
             },
-            "_instruction": "Recording channel of trace"
+            "_instruction": "Enter the names or identifiers of the recording channels contained in this recording"
         },
         "timeStep": {
             "_instruction": "Time step (inverted sampling frequency) of data",
             "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue",
-                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
             ]
         },
-        "sweep": {
+        "order": {
             "type": "array",
             "maxItems": 1,
             "minItems": 1,
             "items": {
                 "type": "integer"
             },
-            "_instruction": "Sweep number of the trace."
-        },
-        "repetition": {
-            "type": "array",
-            "maxItems": 1,
-            "items": {
-                "type": "integer"
-            },
-            "_instruction": "Number of the repetition of the stimulus."
-        },
-        "projectName": {
-            "type": "string",
-            "_instruction": "Name of the project that the trace was recorded for"
-        },
-        "retrivalDate": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was completed"
+            "_instruction": "If this recording is part of a sequence (sweeps, repetitions), enter the order(s) in that sequence contained in this recording"
         },
         "description": {
             "type": "string",
-            "_instruction": "Enter a description of this 'trace' recording."
-        },
-        "adcGain": {
-            "type": "array",
-            "maxItems": 1,
-            "minItems": 1,
-            "items": {
-                "type": "number"
-            },
-            "_instruction": "Gain of analog-to-digital converter"
-        },
-        "dacGain": {
-            "type": "array",
-            "maxItems": 1,
-            "minItems": 1,
-            "items": {
-                "type": "number"
-            },
-            "_instruction": "Gain of digital-to-analog converter"
-        },
-        "dacScal": {
-            "type": "array",
-            "maxItems": 1,
-            "minItems": 1,
-            "items": {
-                "type": "number"
-            },
-            "_instruction": "Scale of digital-to-analog converter"
+            "_instruction": "Enter a description of this recording."
         },
         "devices": {
             "type": "array",
@@ -100,7 +49,7 @@
             ]
         },
         "unitOfMeasurement": {
-            "_instruction": "Add the unit of measurement of this recording.",
+            "_instruction": "Add the unit(s) of measurement of this recording. If there is a single value, it should apply to all channels, if different channels have different units, provide an array of the same size as the number of channels.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
             ]

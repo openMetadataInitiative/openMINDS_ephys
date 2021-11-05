@@ -3,6 +3,14 @@
   "_extends": "https://openminds.ebrains.eu/core/CellState",
   "required": [],
   "properties": {
+    "pipettes": {
+      "type": "array",
+      "minItems": 1,
+      "_linkedTypes": [
+          "https://openminds.ebrains.eu/ephys/Pipette"
+      ],
+      "_instruction": "The pipettes that have been used to patch this cell"
+    },
     "startMembranePotential": {
       "_instruction": "Membrane potential of patched cell at the beginning of recording",
       "_embeddedTypes": [

@@ -8,7 +8,7 @@
     ],
     "properties": {
         "windowType": {
-            "_instruction": "Add the the type of window created by this craniotomy.",
+            "_instruction": "Add the type of window created by this craniotomy.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/CranialWindowType"
             ]
@@ -28,9 +28,15 @@
             "type": "string",
             "_instruction": "Details of the labelling method (for example, injection of a viral construct)"
         },
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description for this craniotomy"
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
         }
     }
 }

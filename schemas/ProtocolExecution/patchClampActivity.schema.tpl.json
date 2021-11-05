@@ -17,6 +17,12 @@
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"
             ]
         },
+        "input": {
+            "_linkedTypes": [
+              "https://openminds.ebrains.eu/core/TissueSampleState",
+              "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        },
         "output": {
             "type": "array",
             "minItems": 1,
@@ -26,17 +32,11 @@
                 "https://openminds.ebrains.eu/ephys/PatchedCell"
             ]
         },
-        "pipettes": {
-            "type": "array",
-            "minItems": 1,
+        "technique": {
+            "_instruction": "Enter the patch-clamp variation used",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Pipette"
-            ],
-            "_instruction": "The pippets that have been used for this expreiment"
-        },
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description for this activity"
+                "https://openminds.ebrains.eu/controlledTerms/PatchClampVariation"
+            ]
         }
     }
 }
