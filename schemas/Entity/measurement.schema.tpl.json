@@ -1,5 +1,5 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/Mesurment",
+    "_type": "https://openminds.ebrains.eu/ephys/Measurement",
     "required": [
         "value",
         "timestamp",
@@ -29,10 +29,10 @@
                 "date-time"
             ],
             "type": "string",
-            "_instruction": "Date and time at which this measurment have been recorded."
+            "_instruction": "Date and time at which this measurement was made."
         },
         "measurementType": {
-            "_instruction": "Add the type of this measurment.",
+            "_instruction": "Add the type of this measurement.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/MeasurementType"
             ]

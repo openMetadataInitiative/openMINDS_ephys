@@ -105,11 +105,11 @@
                 "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
             ]
         },
-        "datalocation": {
+        "dataLocation": {
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
-            "_instruction": "Add all the locations that the data attached to the entity is published",
+            "_instruction": "Add the locations of the files / file bundles in which the recorded data are stored",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/File",
                 "https://openminds.ebrains.eu/core/FileBundle"
