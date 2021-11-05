@@ -9,7 +9,7 @@
         "stimulus"
     ],
     "properties": {
-        "identifier": {
+        "internalIdentifier": {
             "type": "string",
             "_instruction": "Laboratory identifier of the experiment"
         },

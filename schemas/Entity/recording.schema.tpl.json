@@ -4,7 +4,7 @@
         "timeStep"
     ],
     "properties": {
-        "identifier": {
+        "internalIdentifier": {
             "type": "string",
             "_instruction": "Enter any internal identifier used for this recording"
         },

@@ -9,7 +9,7 @@
         },
         "output": {
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/PatchedCell"
+                "https://openminds.ebrains.eu/core/TissueSampleState"
             ]
         },
         "solution": {
