@@ -10,12 +10,17 @@
         },
         "channel": {
             "type": "array",
-            "maxItems": 1,
             "minItems": 1,
             "items": {
                 "type": "string"
             },
             "_instruction": "Enter the names or identifiers of the recording channels contained in this recording"
+        },
+        "channelObject": {
+            "_instruction": "Enter all the recording channels contained in this recording",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/ephys/channel"
+            ]
         },
         "timeStep": {
             "_instruction": "Time step (inverted sampling frequency) of data",
