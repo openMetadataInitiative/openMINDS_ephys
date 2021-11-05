@@ -9,27 +9,9 @@
         "stimulus"
     ],
     "properties": {
-        "startTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was begun"
-        },
-        "endTime": {
-            "_formats": [
-                "date-time"
-            ],
-            "type": "string",
-            "_instruction": "Date and time at which the brain slicing was completed"
-        },
-        "providerExperimentID": {
+        "identifier": {
             "type": "string",
             "_instruction": "Laboratory identifier of the experiment"
-        },
-        "providerExperimentName": {
-            "type": "string",
-            "_instruction": "Laboratory name of the experiment"
         },
         "stimulationDevice": {
             "type": "array",
@@ -37,7 +19,10 @@
             "uniqueItems": true,
             "_instruction": "Device used for stimulation",
             "linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
+                "https://openminds.ebrains.eu/ephys/Device",
+                "https://openminds.ebrains.eu/ephys/Pipette",
+                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
+                "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         },
         "aquisitionDevice": {
@@ -54,8 +39,9 @@
         },
         "targetHoldingPotential": {
             "_instruction": "Target holding potential of patched cell",
-            "linkedTypes": [
-                "https://openminds.ebrains.eu/core/ParameterSet"
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
             ]
         },
         "input": {

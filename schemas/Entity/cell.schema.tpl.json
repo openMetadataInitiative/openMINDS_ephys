@@ -2,18 +2,11 @@
     "_type": "https://openminds.ebrains.eu/ephys/Cell",
     "_extends": "https://openminds.ebrains.eu/core/TissueSample",
     "required": [
-        "CellType",
         "semanticallyAnchoredTo",
         "cellType",
         "studiedState"
     ],
     "properties": {
-        "cellMorphology": {
-            "_instruction": "The morphology type of the patched cell",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/cellMorphology"
-            ]
-        },
         "semanticallyAnchoredTo": {
             "_instruction": "Add all anatomical entities to which the outputs of this protocol execution can be semantically anchored to.",
             "_linkedTypes": [
@@ -32,7 +25,8 @@
             "uniqueItems": true,
             "_instruction": "Add all states in which this tissue sample was studied.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/PatchedCell"
+                "https://openminds.ebrains.eu/ephys/PatchedCell",
+                "https://openminds.ebrains.eu/ephys/TissueSampleState"
             ]
         }
     }

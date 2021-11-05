@@ -10,21 +10,13 @@
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
-            "_instruction": "Add measured value or add all locations that the data attached to the mesurment is published",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Array",
-                "https://openminds.ebrains.eu/ephys/Datalocation",
-                "https://openminds.ebrains.eu/core/QuantitativeValue"
-            ]
-        },
-        "timeStep": {
-            "_instruction": "Time step (inverted sampling frequency) of data",
+            "_instruction": "Add measured value",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"
             ]
         },
-        "timeStamp": {
+        "timestamp": {
             "_formats": [
                 "date-time"
             ],
@@ -37,13 +29,16 @@
                 "https://openminds.ebrains.eu/controlledTerms/MeasurementType"
             ]
         },
-        "measurementDevice": {
+        "device": {
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
             "_instruction": "Device used for this measurement",
             "linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
+                "https://openminds.ebrains.eu/ephys/Device",
+                "https://openminds.ebrains.eu/ephys/Pipette",
+                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
+                "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         },
         "description": {

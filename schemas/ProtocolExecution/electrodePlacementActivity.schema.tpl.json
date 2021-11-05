@@ -18,18 +18,17 @@
                 "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         },
-        "devices": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Add all the devices used by this activity",
+        "input": {
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
+              "https://openminds.ebrains.eu/core/TissueSampleState",
+              "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description for this activity"
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
         }
     }
 }

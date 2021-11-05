@@ -2,7 +2,7 @@
     "_type": "https://openminds.ebrains.eu/ephys/ElectrodeContact",
     "required": [
         "coordinatePoint",
-        "internalIdentifier"
+        "identifier"
     ],
     "properties": {
         "coordinatePoint": {
@@ -20,7 +20,7 @@
                 "https://openminds.ebrains.eu/ephys/Datalocation"
             ]
         },
-        "internalIdentifier": {
+        "identifier": {
             "type": "string",
             "_instruction": "Enter the identifier used for this electrode contact within the file it is stored in."
         },

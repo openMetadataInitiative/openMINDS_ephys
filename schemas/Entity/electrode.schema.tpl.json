@@ -3,7 +3,7 @@
     "_extends": "https://openminds.ebrains.eu/ephys/Device",
     "required": [
         "electrodeContact",
-        "internalIdentifier"
+        "identifier"
     ],
     "properties": {
         "electrodeContact": {
@@ -15,9 +15,18 @@
                 "https://openminds.ebrains.eu/ephys/ElectrodeContact"
             ]
         },
-        "internalIdentifier": {
+        "identifier": {
             "type": "string",
             "_instruction": "Enter the identifier used for this electrode within the file it is stored in."
+        },
+        "amplifier": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Amplifier used with this electrode",
+            "linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Device"
+            ]
         }
     }
 }

@@ -23,9 +23,16 @@
             "type": "string",
             "_instruction": "Solution the culture was maintained in prior to the experiment"
         },
-        "description": {
-            "type": "string",
-            "_instruction": "Enter a description for this activity"
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SubjectGroupState",
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/TissueSampleState"
+            ]
         }
     }
 }
