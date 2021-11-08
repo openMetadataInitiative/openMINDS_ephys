@@ -23,10 +23,10 @@
             "type": "string",
             "_instruction": "Date and time at which this measurement was made."
         },
-        "measurementType": {
-            "_instruction": "Add the type of this measurement.",
+        "measuredQuantity": {
+            "_instruction": "Enter the quantity that is being measured.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/MeasurementType"
+                "https://openminds.ebrains.eu/controlledTerms/MeasuredQuantity"
             ]
         },
         "device": {
