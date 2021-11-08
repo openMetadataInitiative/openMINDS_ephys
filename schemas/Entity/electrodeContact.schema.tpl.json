@@ -17,7 +17,8 @@
             "uniqueItems": true,
             "_instruction": "Add one or several files in which the electrode contact is defined in.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Datalocation"
+                "https://openminds.ebrains.eu/core/File",
+                "https://openminds.ebrains.eu/core/FileBundle"
             ]
         },
         "internalIdentifier": {
