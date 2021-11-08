@@ -1,6 +1,6 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/PatchedCell",
-  "_extends": "https://openminds.ebrains.eu/core/CellState",
+  "_extends": "https://openminds.ebrains.eu/core/TissueSampleState",
   "required": [],
   "properties": {
     "pipettes": {

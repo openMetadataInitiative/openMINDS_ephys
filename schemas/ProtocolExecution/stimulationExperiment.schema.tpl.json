@@ -50,7 +50,6 @@
             "uniqueItems": true,
             "_instruction": "Add all input (tissue sample state, cell state, subject state and patched cells) used by this stimulation experiment.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/CellState",
                 "https://openminds.ebrains.eu/ephys/PatchedCell",
                 "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
                 "https://openminds.ebrains.eu/core/TissueSampleState",

@@ -1,4 +1,0 @@
-{
-    "_type": "https://openminds.ebrains.eu/ephys/CellState",
-    "_extends": "https://openminds.ebrains.eu/core/TissueSampleState"
-}
