@@ -3,7 +3,7 @@
   "required": [
     "stimulusType",
     "stimulusModality",
-    "datalocation"
+    "dataLocation"
   ],
   "properties": {
     "stimulusType": {
@@ -27,7 +27,7 @@
         "https://openminds.ebrains.eu/core/ParameterSet"
       ]
     },
-    "datalocation": {
+    "dataLocation": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,

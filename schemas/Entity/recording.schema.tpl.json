@@ -43,7 +43,7 @@
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/Device",
                 "https://openminds.ebrains.eu/ephys/Pipette",
-                "https://openminds.ebrains.eu/ephys/EletrodeArray",
+                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
                 "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         },

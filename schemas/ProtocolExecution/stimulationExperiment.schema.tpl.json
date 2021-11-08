@@ -18,7 +18,7 @@
             "minItems": 1,
             "uniqueItems": true,
             "_instruction": "Device used for stimulation",
-            "linkedTypes": [
+            "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/Device",
                 "https://openminds.ebrains.eu/ephys/Pipette",
                 "https://openminds.ebrains.eu/ephys/ElectrodeArray",
@@ -30,7 +30,7 @@
             "minItems": 1,
             "uniqueItems": true,
             "_instruction": "Devices used for data collection (e.g. amplifier)",
-            "linkedTypes": [
+            "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/Device",
                 "https://openminds.ebrains.eu/ephys/Pipette",
                 "https://openminds.ebrains.eu/ephys/ElectrodeArray",

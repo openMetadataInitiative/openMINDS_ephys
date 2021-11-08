@@ -1,5 +1,5 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacmentActivity",
+    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacementActivity",
     "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
     "required": [
         "anesthesia",

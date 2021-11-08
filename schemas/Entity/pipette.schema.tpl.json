@@ -17,11 +17,11 @@
             "type": "string",
             "_instruction": "Solution used to fill the pipette"
         },
-        "outerDiameter": {
+        "externalDiameter": {
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue"
             ],
-            "_instruction": "Outer diameter of the pipette"
+            "_instruction": "External diameter of the pipette"
         },
         "internalDiameter": {
             "_embeddedTypes": [

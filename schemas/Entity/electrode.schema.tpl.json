@@ -24,7 +24,7 @@
             "minItems": 1,
             "uniqueItems": true,
             "_instruction": "Amplifier used with this electrode",
-            "linkedTypes": [
+            "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/Device"
             ]
         }
