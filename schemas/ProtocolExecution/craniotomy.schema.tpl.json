@@ -1,0 +1,42 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Craniotomy",
+    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "required": [
+        "windowType",
+        "anesthesia",
+        "diameter"
+    ],
+    "properties": {
+        "windowType": {
+            "_instruction": "Add the type of window created by this craniotomy.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/CranialWindowType"
+            ]
+        },
+        "anesthesia": {
+            "type": "string",
+            "_instruction": "Anesthesia used during the surgery"
+        },
+        "diameter": {
+            "_instruction": "Diameter of the window",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "fluorescenceLabelling": {
+            "type": "string",
+            "_instruction": "Details of the labelling method (for example, injection of a viral construct)"
+        },
+        "input": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        }
+    }
+}

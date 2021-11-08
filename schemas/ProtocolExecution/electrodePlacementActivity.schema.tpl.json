@@ -1,0 +1,34 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacmentActivity",
+    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "required": [
+        "anesthesia",
+        "electrodes",
+        "devices"
+    ],
+    "properties": {
+        "anesthesia": {
+            "type": "string",
+            "_instruction": "Anesthesia used during the surgery"
+        },
+        "electrodes": {
+            "_instruction": "Add the electrodes placed by this activity",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
+                "https://openminds.ebrains.eu/ephys/Electrode"
+            ]
+        },
+        "input": {
+            "_linkedTypes": [
+              "https://openminds.ebrains.eu/core/TissueSampleState",
+              "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        },
+        "output": {
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        }
+    }
+}
