@@ -14,36 +14,31 @@
     "startMembranePotential": {
       "_instruction": "Membrane potential of patched cell at the beginning of recording",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "endMembranePotential": {
       "_instruction": "Membrane potential of patched cell at the end of recording",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "sealResistance": {
       "_instruction": "Seal resistance of patch",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "liquidJunctionPotential": {
       "_instruction": "Liquid junction potential of patch",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "chlorideReversalPotential": {
       "_instruction": "The chloride reversal potential calculated from the intracellular solution of the pipette",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "labelingCompound": {
