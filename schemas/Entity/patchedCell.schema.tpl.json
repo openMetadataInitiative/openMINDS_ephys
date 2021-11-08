@@ -24,19 +24,25 @@
       ]
     },
     "sealResistance": {
-      "_instruction": "Seal resistance of patch",
+      "_instruction": "Seal resistance(s) of patch(es)",
+      "type": "array",
+      "minItems": 1,
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "liquidJunctionPotential": {
-      "_instruction": "Liquid junction potential of patch",
+      "_instruction": "Liquid junction potential(s) of patch(es)",
+      "type": "array",
+      "minItems": 1,
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/ephys/Measurement"
       ]
     },
     "chlorideReversalPotential": {
-      "_instruction": "The chloride reversal potential calculated from the intracellular solution of the pipette",
+      "_instruction": "The chloride reversal potential(s) calculated from the intracellular solution(s) of the pipette(s)",
+      "type": "array",
+      "minItems": 1,
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/ephys/Measurement"
       ]
