@@ -2,7 +2,7 @@
   "_type": "https://openminds.ebrains.eu/ephys/Stimulus",
   "required": [
     "stimulusType",
-    "stimulusModality",
+    "stimulusApproach",
     "dataLocation"
   ],
   "properties": {
@@ -12,10 +12,10 @@
         "https://openminds.ebrains.eu/controlledTerms/StimulusType"
       ]
     },
-    "stimulusModality": {
+    "stimulusApproach": {
       "_instruction": "Modality of stimulus that have been used",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/StimulusModality"
+        "https://openminds.ebrains.eu/controlledTerms/StimulationApproach"
       ]
     },
     "parameterSet": {
