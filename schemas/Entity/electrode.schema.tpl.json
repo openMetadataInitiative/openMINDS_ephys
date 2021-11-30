@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/Electrode",
-    "_extends": "https://openminds.ebrains.eu/ephys/Device",
+    "_extends": "https://openminds.ebrains.eu/core/HardwareVersion",
     "required": [
         "electrodeContact",
         "internalIdentifier"
@@ -25,7 +25,7 @@
             "uniqueItems": true,
             "_instruction": "Amplifier used with this electrode",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
+                "https://openminds.ebrains.eu/core/HardwareVersion"
             ]
         }
     }

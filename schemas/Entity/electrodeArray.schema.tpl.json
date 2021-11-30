@@ -24,7 +24,7 @@
             "uniqueItems": true,
             "_instruction": "Amplifier used with this electrode array",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
+                "https://openminds.ebrains.eu/core/HardwareVersion"
             ]
         }
     }
