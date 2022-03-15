@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/StimulationExperiment",
-    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "_extends": "/core/research/protocolExecution.schema.tpl.json",
     "required": [
         "input",
         "output",
