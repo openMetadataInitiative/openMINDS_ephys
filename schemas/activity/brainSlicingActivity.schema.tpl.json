@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/BrainSlicingActivity",
-    "_extends": "https://openminds.ebrains.eu/core/ProtocolExecution",
+    "_extends": "/core/research/protocolExecution.schema.tpl.json",
     "properties": {
         "input": {
             "_linkedTypes": [

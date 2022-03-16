@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/Cell",
-    "_extends": "https://openminds.ebrains.eu/core/TissueSample",
+    "_extends": "/core/research/tissueSample.schema.tpl.json",
     "required": [
         "semanticallyAnchoredTo",
         "cellType",

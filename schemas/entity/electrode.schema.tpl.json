@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/Electrode",
-    "_extends": "https://openminds.ebrains.eu/ephys/Device",
+    "_extends": "entity/device.schema.tpl.json",
     "required": [
         "electrodeContact",
         "internalIdentifier"
