@@ -1,6 +1,6 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacementActivity",
-    "_extends": "/core/research/protocolExecution.schema.tpl.json",
+    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacement",
+    "_extends": "/core/research/experimentalActivity.schema.tpl.json",
     "required": [
         "anesthesia",
         "electrodes",
@@ -18,10 +18,16 @@
                 "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         },
+        "targetPosition": {
+            "_instruction": "Add the general target position for the electrode or electrode array.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/sands/AnatomicalTargetPosition"
+            ]
+        },
         "input": {
             "_linkedTypes": [
-              "https://openminds.ebrains.eu/core/TissueSampleState",
-              "https://openminds.ebrains.eu/core/SubjectState"
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
         "output": {
