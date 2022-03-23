@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/CranialWindowPreparation",
-    "_extends": "/core/research/protocolExecution.schema.tpl.json",
+    "_extends": "/core/research/experimentalActivity.schema.tpl.json",
     "required": [
         "reinforcementType",
         "constructionType",
