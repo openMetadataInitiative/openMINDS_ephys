@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/TissueSampleSlicing",
-    "_extends": "/core/research/protocolExecution.schema.tpl.json",
+    "_extends": "/core/research/ExperimentalActivity.schema.tpl.json",
     "required": [
         "cuttingThickness",
         "slicingPlane"
