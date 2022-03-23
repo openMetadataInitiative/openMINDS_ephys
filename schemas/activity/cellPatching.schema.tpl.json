@@ -1,16 +1,13 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/PatchClampActivity",
-    "_extends": "/core/research/protocolExecution.schema.tpl.json",
-    "required": [
-        "temperature",
-        "bathSolution"
-    ],
+    "_type": "https://openminds.ebrains.eu/ephys/cellPatching",
+    "_extends": "/core/research/experimentalActivity.schema.tpl.json",
+    "required": [],
     "properties": {
         "bathSolution": {
             "type": "string",
             "_instruction": "Solution used in the bath"
         },
-        "temperature": {
+        "solutionTemperature": {
             "_instruction": "Bath temperature",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
@@ -19,8 +16,8 @@
         },
         "input": {
             "_linkedTypes": [
-              "https://openminds.ebrains.eu/core/TissueSampleState",
-              "https://openminds.ebrains.eu/core/SubjectState"
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
         "output": {
@@ -32,7 +29,21 @@
                 "https://openminds.ebrains.eu/ephys/PatchedCell"
             ]
         },
-        "technique": {
+        "pipettes": {
+            "type": "array",
+            "minItems": 1,
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Pipette"
+            ],
+            "_instruction": "The pipettes that have been used to patch this cell"
+        },
+        "otherDevices": {
+            "_instruction": "Enter any other devices taht have been a part of important parts of the patch rig",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Device"
+            ]
+        },
+        "variation": {
             "_instruction": "Enter the patch-clamp variation used",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/PatchClampVariation"
