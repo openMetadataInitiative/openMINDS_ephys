@@ -3,7 +3,7 @@
     "_extends": "/core/research/experimentalActivity.schema.tpl.json",
     "required": [],
     "properties": {
-        "bathSolution": {
+        "tissueBathSolution": {
             "type": "string",
             "_instruction": "Solution used in the bath"
         },
