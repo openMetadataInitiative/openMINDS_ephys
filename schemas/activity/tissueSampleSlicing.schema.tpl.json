@@ -9,8 +9,7 @@
         "input": {
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/SubjectState",
-                "https://openminds.ebrains.eu/core/TissueSampleState",
-                "https://openminds.ebrains.eu/core/TissueSampleCollectionState"
+                "https://openminds.ebrains.eu/core/TissueSampleState"
             ]
         },
         "output": {
@@ -22,7 +21,8 @@
         "device": {
             "_instruction": "Add the device used to cut the tissue sample.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/Device"
+                "https://openminds.ebrains.eu/core/Device",
+                "https://openminds.ebrains.eu/contorlledTerms/DeviceType"
             ]
         },
         "tissueBathSolution": {
