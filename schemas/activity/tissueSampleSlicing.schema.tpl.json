@@ -63,6 +63,12 @@
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane"
             ]
+        },
+        "vibrationFrequency": {
+            "_instruction": "If applicable, define the vibration frequency used in this tissue sample slicing.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ]
         }
     }
 }
