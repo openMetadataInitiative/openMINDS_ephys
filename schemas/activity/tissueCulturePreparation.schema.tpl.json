@@ -3,7 +3,7 @@
     "_extends": "/core/research/ExperimentalActivity.schema.tpl.json",
     "required": [
         "cultureType",
-        "cultureSolution"
+        "cultureMedium"
     ],
     "properties": {
         "cultureType": {
