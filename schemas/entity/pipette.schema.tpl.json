@@ -2,7 +2,6 @@
     "_type": "https://openminds.ebrains.eu/ephys/Pipette",
     "_extends": "entity/device.schema.tpl.json",
     "required": [
-        "pipetteResistance",
         "pipetteSolution"
     ],
     "properties": {
@@ -14,8 +13,10 @@
             ]
         },
         "pipetteSolution": {
-            "type": "string",
-            "_instruction": "Solution used to fill the pipette"
+            "_instruction": "Solution used to fill the pipette",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
+            ]
         },
         "externalDiameter": {
             "_embeddedTypes": [
