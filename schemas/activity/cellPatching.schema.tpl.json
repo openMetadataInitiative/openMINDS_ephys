@@ -4,8 +4,10 @@
     "required": [],
     "properties": {
         "tissueBathSolution": {
-            "type": "string",
-            "_instruction": "Solution used in the bath"
+            "_instruction": "Solution used in the bath",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
+            ]
         },
         "solutionTemperature": {
             "_instruction": "Bath temperature",
