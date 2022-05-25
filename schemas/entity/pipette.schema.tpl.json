@@ -2,7 +2,6 @@
     "_type": "https://openminds.ebrains.eu/ephys/Pipette",
     "_extends": "entity/device.schema.tpl.json",
     "required": [
-        "pipetteResistance",
         "pipetteSolution"
     ],
     "properties": {
