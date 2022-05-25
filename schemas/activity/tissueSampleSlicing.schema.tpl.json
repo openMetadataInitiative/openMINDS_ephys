@@ -25,7 +25,9 @@
             ]
         },
         "tissueBathSolution": {
-            "type": "string",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
+            ],
             "_instruction": "Solution in which the brain was sliced (e.g. Ringer's solution)"
         },
         "temperature": {
