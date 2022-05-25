@@ -13,8 +13,10 @@
             ]
         },
         "cultureMedium": {
-            "type": "string",
-            "_instruction": "Solution the culture was maintained in prior to the experiment"
+            "_instruction": "Solution the culture was maintained in prior to the experiment",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
+            ]
         },
         "input": {
             "_linkedTypes": [
