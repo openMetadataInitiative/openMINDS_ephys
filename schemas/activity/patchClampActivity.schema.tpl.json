@@ -19,8 +19,8 @@
         },
         "input": {
             "_linkedTypes": [
-              "https://openminds.ebrains.eu/core/TissueSampleState",
-              "https://openminds.ebrains.eu/core/SubjectState"
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
         "output": {
