@@ -1,6 +1,6 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/Pipette",
-    "_extends": "entity/device.schema.tpl.json",
+    "_extends": "/core/products/Device.schema.tpl.json",
     "required": [
         "pipetteSolution"
     ],
