@@ -42,7 +42,7 @@
         "otherDevices": {
             "_instruction": "Enter any other devices taht have been a part of important parts of the patch rig",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
+                "https://openminds.ebrains.eu/core/Device"
             ]
         },
         "variation": {
