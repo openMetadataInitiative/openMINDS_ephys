@@ -32,7 +32,7 @@
             "_instruction": "Add one or several files in which the recordings from this electrode contact were stored.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/Recording",
-                "https://openminds.ebrains.eu/ephys/Mesurment"
+                "https://openminds.ebrains.eu/ephys/Measurement"
             ]
         },
         "relatedStimulation": {
