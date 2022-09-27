@@ -11,6 +11,7 @@
             "uniqueItems": true,
             "_instruction": "Enter the identifier used for this electrode within the file it is stored in."
         },
+        "electrodeIdentifier": {},
         "insulatorMaterial": {
             "_instruction": "Add the insulator material of this electrode.",
             "_linkedTypes": [
