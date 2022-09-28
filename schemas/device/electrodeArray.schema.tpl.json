@@ -1,17 +1,23 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/ElectrodeArray",
     "required": [
-        "electrodes",
+        "numberOfElectrodes",
         "internalIdentifier"
     ],
     "properties": {
         "internalIdentifier": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Enter the identifier used for this electrode within the file it is stored in."
+            "type": "string",
+            "_instruction": "Enter the identifier used for this electrode array within the file it is stored in."
         },
-        "electrodeIdentifier": {},
+        "electrodeIdentifier": {
+            "type": "array",
+            "minItems": 2,
+            "uniqueItems": true,
+            "_instruction": "Enter the identifier used for each electode (conatct point) of this electrode array. Number of identifiers should match the 'numberOfElectrodes'.",
+            "items": {
+                "type": "string"
+            }
+        },
         "insulatorMaterial": {
             "_instruction": "Add the insulator material of this electrode.",
             "_linkedTypes": [
