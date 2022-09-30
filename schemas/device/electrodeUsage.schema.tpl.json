@@ -1,7 +1,7 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
     "required": [
-        "coordinatePoint"
+        "electrode"
     ],
     "properties": {
         "electrode": {
@@ -14,7 +14,7 @@
                 "date-time",
                 "time"
             ],
-            "_instruction": "Enter the time (e.g., '20:20:39+00:00') or datetime (e.g., '2018-11-13T20:20:39+00:00') of when the activity started."
+            "_instruction": "Enter the time (e.g., '20:20:39+00:00') or datetime (e.g., '2018-11-13T20:20:39+00:00') of when the usage started."
         },
         "endedAtTime": {
             "type": "string",
@@ -22,7 +22,7 @@
                 "date-time",
                 "time"
             ],
-            "_instruction": "Enter the time (e.g., '20:20:39+00:00') or datetime (e.g., '2018-11-13T20:20:39+00:00') of when the activity ended."
+            "_instruction": "Enter the time (e.g., '20:20:39+00:00') or datetime (e.g., '2018-11-13T20:20:39+00:00') of when the usage ended."
         },
         "coordinatePoint": {
             "_instruction": "Add the central coordinate of this electrode contact.",
@@ -64,6 +64,13 @@
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "usedTissue": {
+            "_instruction": "Add the tissue or subject used with this eletrode usage",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
             ]
         }
     }

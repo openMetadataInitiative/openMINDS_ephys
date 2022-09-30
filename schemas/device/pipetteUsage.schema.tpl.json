@@ -1,5 +1,69 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/PipetteUsage",
-    "required": [],
-    "properties": {}
+    "required": [
+        "pipette"
+    ],
+    "properties": {
+        "pipette": {
+            "_instruction": "Add the pipette used.",
+            "_linkedTypes": "https://openminds.ebrains.eu/ephys/Pipette"
+        },
+        "startedAtTime": {
+            "type": "string",
+            "_formats": [
+                "date-time",
+                "time"
+            ],
+            "_instruction": "Enter the time (e.g., '20:20:39+00:00') or datetime (e.g., '2018-11-13T20:20:39+00:00') of when the usage started."
+        },
+        "endedAtTime": {
+            "type": "string",
+            "_formats": [
+                "date-time",
+                "time"
+            ],
+            "_instruction": "Enter the time (e.g., '20:20:39+00:00') or datetime (e.g., '2018-11-13T20:20:39+00:00') of when the usage ended."
+        },
+        "startMembranePotential": {
+            "_instruction": "Membrane potential of patched cell at the beginning of recording",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "endMembranePotential": {
+            "_instruction": "Membrane potential of patched cell at the end of recording",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "sealResistance": {
+            "_instruction": "Seal resistance of patch",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "liquidJunctionPotential": {
+            "_instruction": "Liquid junction potential of patch",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "relatedRecording": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "_instruction": "Add one or several files in which the recordings from this electrode contact were stored.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Recording",
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "usedTissue": {
+            "_instruction": "Add the tissue or subject used with this pippet usage",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
+            ]
+        }
+    }
 }
