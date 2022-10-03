@@ -41,10 +41,8 @@
         },
         "recordedWith": {
             "_instruction": "Add the device used for this recording.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/PipetteUsage",
-                "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
-                "https://openminds.ebrains.eu/ephys/ElectrodeUsage"
+            "_linkedCategories": [
+                "deviceUsage"
             ]
         },
         "dataLocation": {
