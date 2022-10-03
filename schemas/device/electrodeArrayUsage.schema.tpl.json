@@ -73,7 +73,7 @@
             ]
         },
         "usedTissue": {
-            "_instruction": "Add the tissue or subject used with this eletrode array usage",
+            "_instruction": "Add the tissue or subject used with this electrode array usage",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/TissueSampleState",
                 "https://openminds.ebrains.eu/core/SubjectState"
