@@ -1,5 +1,8 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
+    "_categories": [
+        "deviceUsage"
+    ],
     "required": [
         "electrodeArray"
     ],

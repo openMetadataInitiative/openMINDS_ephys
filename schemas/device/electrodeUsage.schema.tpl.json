@@ -1,5 +1,8 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
+    "_categories": [
+        "deviceUsage"
+    ],
     "required": [
         "electrode"
     ],

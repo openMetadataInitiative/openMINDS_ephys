@@ -1,5 +1,8 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/PipetteUsage",
+    "_categories": [
+        "deviceUsage"
+    ],
     "required": [
         "pipette"
     ],
