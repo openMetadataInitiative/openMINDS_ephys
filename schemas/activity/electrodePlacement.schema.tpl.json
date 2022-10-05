@@ -8,8 +8,8 @@
         "electrodes": {
             "_instruction": "Add the electrodes placed by this activity",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
-                "https://openminds.ebrains.eu/ephys/Electrode"
+                "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
+                "https://openminds.ebrains.eu/ephys/ElectrodeUsage"
             ]
         },
         "targetPosition": {
