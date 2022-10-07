@@ -3,7 +3,6 @@
     "_categories": [
         "deviceUsage"
     ],
-    "required": [],
     "properties": {
         "sectioningSpeed": {
             "_instruction": "Define the sectioning speed used in this tissue sample slicing.",
