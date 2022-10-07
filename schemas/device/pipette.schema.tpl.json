@@ -4,23 +4,7 @@
         "setupComponent"
     ],
     "_extends": "/core/products/Device.schema.tpl.json",
-    "required": [
-        "pipetteSolution"
-    ],
     "properties": {
-        "pipetteResistance": {
-            "_instruction": "Resistance of pipette used",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue",
-                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
-            ]
-        },
-        "pipetteSolution": {
-            "_instruction": "Solution used to fill the pipette",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
-            ]
-        },
         "externalDiameter": {
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue"
