@@ -25,12 +25,6 @@
                 "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
-        "stimulationMeasurement": {
-            "_instruction": "Add the appropriate Measurement card for this stimulation experiment",
-            "_linkedCategories": [
-                "stimulationMeasurement"
-            ]
-        },
         "stimulation": {
             "_instruction": "Stimulation used in the experiment.",
             "_linkedTypes": [
