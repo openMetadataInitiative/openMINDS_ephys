@@ -64,6 +64,30 @@
                 "https://openminds.ebrains.eu/core/Measurement"
             ]
         },
+        "compensationCurrent": {
+            "_instruction": "Compensation current for series resistance",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "measuredHoldingPotential": {
+            "_instruction": "Measured holding potential of patched cell",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "seriesResistance": {
+            "_instruction": "Series resistance compensation while patching cell.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "inputResistance": {
+            "_instruction": "Input resistance of patched cell",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
         "labelingCompound": {
             "type": "string",
             "_instruction": "The compound used in the pipette to label the cell"
