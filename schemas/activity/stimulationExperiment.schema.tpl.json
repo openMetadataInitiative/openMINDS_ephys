@@ -3,7 +3,6 @@
     "_extends": "/core/research/experimentalActivity.schema.tpl.json",
     "required": [
         "input",
-        "output",
         "stimulationDevice",
         "aquisitionDevice",
         "stimulus"
@@ -19,14 +18,13 @@
             "uniqueItems": true,
             "_instruction": "Add all input (tissue sample state, cell state, subject state and patched cells) used by this stimulation experiment.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/PatchedCell",
                 "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
                 "https://openminds.ebrains.eu/core/TissueSampleState",
                 "https://openminds.ebrains.eu/core/SubjectGroupState",
                 "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
-        "output": {
+        "realtedRecording": {
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
@@ -35,71 +33,22 @@
                 "https://openminds.ebrains.eu/ephys/Recording"
             ],
             "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Measurement"
+                "https://openminds.ebrains.eu/core/Measurement"
             ]
         },
-        "stimulationDevice": {
+        "stimulationSetup": {
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
-            "_instruction": "Device used for stimulation",
+            "_instruction": "Add the setup used for this experiment",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device",
-                "https://openminds.ebrains.eu/ephys/Pipette",
-                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
-                "https://openminds.ebrains.eu/ephys/Electrode"
+                "https://openminds.ebrains.eu/core/setup"
             ]
         },
-        "aquisitionDevice": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Devices used for data collection (e.g. amplifier)",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device",
-                "https://openminds.ebrains.eu/ephys/Pipette",
-                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
-                "https://openminds.ebrains.eu/ephys/Electrode"
-            ]
-        },
-        "otherDevices": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Any other devices used for this experiment",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Device"
-            ]
-        },
-        "targetHoldingPotential": {
-            "_instruction": "Target holding potential of patched cell",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue",
-                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
-            ]
-        },
-        "compensationCurrent": {
-            "_instruction": "Compensation current for series resistance",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Measurement"
-            ]
-        },
-        "measuredHoldingPotential": {
-            "_instruction": "Measured holding potential of patched cell",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Measurement"
-            ]
-        },
-        "seriesResistance": {
-            "_instruction": "Series resistance compensation while patching cell.",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Measurement"
-            ]
-        },
-        "inputResistance": {
-            "_instruction": "Input resistance of patched cell",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Measurement"
+        "stimulationMeasurement": {
+            "_instruction": "Add the aporipate Measurement card for this stimulation experiment",
+            "_linkedCategories": [
+                "stimulationMeasurement"
             ]
         },
         "stimulus": {

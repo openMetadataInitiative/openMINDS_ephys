@@ -1,0 +1,40 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/PatchCLampMeasurments",
+    "_categories": [
+        "stimulationMeasurement"
+    ],
+    "required": [],
+    "properties": {
+        "targetHoldingPotential": {
+            "_instruction": "Target holding potential of patched cell",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "compensationCurrent": {
+            "_instruction": "Compensation current for series resistance",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "measuredHoldingPotential": {
+            "_instruction": "Measured holding potential of patched cell",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "seriesResistance": {
+            "_instruction": "Series resistance compensation while patching cell.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        },
+        "inputResistance": {
+            "_instruction": "Input resistance of patched cell",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/Measurement"
+            ]
+        }
+    }
+}

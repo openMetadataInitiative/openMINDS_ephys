@@ -1,0 +1,8 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/electrodeMeasurements",
+    "_categories": [
+        "stimulationMeasurement"
+    ],
+    "required": [],
+    "properties": {}
+}
