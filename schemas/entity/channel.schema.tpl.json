@@ -1,6 +1,8 @@
 {
     "_type": "https://openminds.ebrains.eu/ephys/Channel",
-    "required": [],
+    "required": [
+        "internalIdentifier"
+    ],
     "properties": {
         "internalIdentifier": {
             "type": "string",
