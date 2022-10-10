@@ -30,7 +30,7 @@
                 "https://openminds.ebrains.eu/core/TissueSampleStat"
             ]
         },
-        "pipettes": {
+        "pipette": {
             "type": "array",
             "minItems": 1,
             "_linkedTypes": [
@@ -38,10 +38,16 @@
             ],
             "_instruction": "The pipettes that have been used to patch this cell"
         },
-        "otherDevices": {
+        "setup": {
             "_instruction": "Enter any other devices taht have been a part of important parts of the patch rig",
+            "_linkedCategories": [
+                "https://openminds.ebrains.eu/core/Setup"
+            ]
+        },
+        "targetPosition": {
+            "_instruction": "Add the general target position for the electrode or electrode array.",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/Device"
+                "https://openminds.ebrains.eu/sands/AnatomicalTargetPosition"
             ]
         },
         "variation": {

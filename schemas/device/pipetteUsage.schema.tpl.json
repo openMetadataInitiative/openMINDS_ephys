@@ -89,8 +89,10 @@
             ]
         },
         "labelingCompound": {
-            "type": "string",
-            "_instruction": "The compound used in the pipette to label the cell"
+            "_instruction": "The compound used in the pipette to label the cell",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
+            ]
         }
     }
 }

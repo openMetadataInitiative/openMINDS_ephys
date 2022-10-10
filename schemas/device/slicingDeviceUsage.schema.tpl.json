@@ -3,20 +3,24 @@
     "_categories": [
         "deviceUsage"
     ],
+    "required": [
+        "cuttingThickness",
+        "slicingPlane"
+    ],
     "properties": {
-        "sectioningSpeed": {
-            "_instruction": "Define the sectioning speed used in this tissue sample slicing.",
+        "slicingSpeed": {
+            "_instruction": "Define the slicing speed used in this tissue sample slicing.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue"
             ]
         },
         "oscillationAmplitude": {
-            "_instruction": "Define the oscillation amplitude used in this tissue sample slicing.",
+            "_instruction": "Define the oscillation amplitude of the blade used in this tissue sample slicing.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue"
             ]
         },
-        "cuttingThickness": {
+        "sliceThickness": {
             "_instruction": "Slice thickness",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",

@@ -1,11 +1,11 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacement",
+    "_type": "https://openminds.ebrains.eu/ephys/DevicePlacement",
     "_extends": "/core/research/experimentalActivity.schema.tpl.json",
     "required": [
-        "electrodes"
+        "device"
     ],
     "properties": {
-        "electrodes": {
+        "device": {
             "_instruction": "Add the electrodes placed by this activity",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",

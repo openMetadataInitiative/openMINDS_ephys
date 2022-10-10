@@ -20,7 +20,7 @@
                 "https://openminds.ebrains.eu/sands/CoordinatePoint"
             ]
         },
-        "definedIn": {
+        "additionalInformation": {
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
@@ -30,18 +30,9 @@
                 "https://openminds.ebrains.eu/core/FileBundle"
             ]
         },
-        "relatedStimulation": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Add one or several files in which the stimulations applied via this electrode contact were stored.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/Stimulation"
-            ]
-        },
         "contactResistance": {
             "type": "array",
-            "minItems": 1,
+            "minItems": 2,
             "uniqueItems": true,
             "_instruction": "Enter the contact resistance of each electrode of this array, in the same order that hase been spesified eletrode array card..",
             "_embeddedTypes": [
@@ -49,7 +40,7 @@
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"
             ]
         },
-        "usedTissue": {
+        "usedSpeciment": {
             "_instruction": "Add the tissue or subject used with this electrode array usage",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/TissueSampleState",

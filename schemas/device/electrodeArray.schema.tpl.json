@@ -5,7 +5,8 @@
     ],
     "required": [
         "numberOfElectrodes",
-        "internalIdentifier"
+        "internalIdentifier",
+        "electrodeIdentifier"
     ],
     "properties": {
         "internalIdentifier": {
@@ -35,7 +36,7 @@
                 "https://openminds.ebrains.eu/chemicals/chemicalSubstance"
             ]
         },
-        "resistance": {
+        "intrinsicResistance": {
             "_instruction": "Enter the intrinsic resistance of this electrode.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
