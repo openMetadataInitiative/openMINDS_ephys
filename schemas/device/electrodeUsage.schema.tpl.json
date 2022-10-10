@@ -1,10 +1,16 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/ElectrodeContact",
+    "_type": "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
+    "_categories": [
+        "deviceUsage"
+    ],
     "required": [
-        "coordinatePoint",
-        "internalIdentifier"
+        "electrode"
     ],
     "properties": {
+        "electrode": {
+            "_instruction": "Add the electrode used.",
+            "_linkedTypes": "https://openminds.ebrains.eu/ephys/Electrode"
+        },
         "coordinatePoint": {
             "_instruction": "Add the central coordinate of this electrode contact.",
             "_embeddedTypes": [
@@ -21,20 +27,6 @@
                 "https://openminds.ebrains.eu/core/FileBundle"
             ]
         },
-        "internalIdentifier": {
-            "type": "string",
-            "_instruction": "Enter the identifier used for this electrode contact within the file it is stored in."
-        },
-        "relatedRecording": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Add one or several files in which the recordings from this electrode contact were stored.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Recording",
-                "https://openminds.ebrains.eu/ephys/Measurement"
-            ]
-        },
         "relatedStimulation": {
             "type": "array",
             "minItems": 1,
@@ -44,13 +36,18 @@
                 "https://openminds.ebrains.eu/core/Stimulation"
             ]
         },
-        "visualizedIn": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Add one or several images in which the electrode contact is visualized in.",
+        "contactResistance": {
+            "_instruction": "Enter the contact resistance of this electrode.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        },
+        "usedTissue": {
+            "_instruction": "Add the tissue or subject used with this eletrode usage",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/file"
+                "https://openminds.ebrains.eu/core/TissueSampleState",
+                "https://openminds.ebrains.eu/core/SubjectState"
             ]
         }
     }

@@ -1,0 +1,37 @@
+{
+    "_type": "https://openminds.ebrains.eu/ephys/Electrode",
+    "_categories": [
+        "setupComponent"
+    ],
+    "_extends": "/core/products/Device.schema.tpl.json",
+    "required": [
+        "internalIdentifier"
+    ],
+    "properties": {
+        "internalIdentifier": {
+            "type": "string",
+            "_instruction": "Enter the identifier used for this electrode within the file it is stored in."
+        },
+        "insulatorMaterial": {
+            "_instruction": "Add the insulator material of this electrode.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture",
+                "https://openminds.ebrains.eu/chemicals/chemicalSubstance"
+            ]
+        },
+        "conductorMaterial": {
+            "_instruction": "Add the conductor material of this electrode.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture",
+                "https://openminds.ebrains.eu/chemicals/chemicalSubstance"
+            ]
+        },
+        "resistance": {
+            "_instruction": "Enter the intrinsic resistance of this electrode.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue",
+                "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+            ]
+        }
+    }
+}
