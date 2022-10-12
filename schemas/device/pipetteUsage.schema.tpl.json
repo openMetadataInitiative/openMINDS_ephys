@@ -10,7 +10,9 @@
     "properties": {
         "pipette": {
             "_instruction": "Add the pipette used.",
-            "_linkedTypes": "https://openminds.ebrains.eu/ephys/Pipette"
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/ephys/Pipette"
+            ]
         },
         "pipetteResistance": {
             "_instruction": "Resistance of pipette used.",
@@ -22,7 +24,9 @@
         "pipetteSolution": {
             "_instruction": "Solution used to fill the pipette",
             "_linkedTypes": [
-                "https://openminds.ebrains.eu/chemicals/chemicalMixture"
+                "https://openminds.ebrains.eu/chemicals/chemicalMixture",
+                "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
+                "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
             ]
         },
         "startMembranePotential": {
@@ -49,7 +53,7 @@
                 "https://openminds.ebrains.eu/core/Measurement"
             ]
         },
-        "usedTissue": {
+        "usedSpecimen": {
             "_instruction": "Add the tissue or subject used with this pipette usage",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/TissueSampleState",
