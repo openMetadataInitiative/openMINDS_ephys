@@ -1,7 +1,0 @@
-{
-    "_type": "https://openminds.ebrains.eu/ephys/SlicingDevice",
-    "_categories": [
-        "setupComponent"
-    ],
-    "_extends": "/core/products/Device.schema.tpl.json"
-}
