@@ -17,7 +17,7 @@
             "type": "array",
             "minItems": 2,
             "uniqueItems": true,
-            "_instruction": "Enter the identifier used for each electode (conatct point) of this electrode array. Number of identifiers should match the 'numberOfElectrodes'.",
+            "_instruction": "Enter the identifier used for each electrode (conatct point) of this electrode array. Number of identifiers should match the 'numberOfElectrodes'.",
             "items": {
                 "type": "string"
             }

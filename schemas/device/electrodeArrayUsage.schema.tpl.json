@@ -8,14 +8,14 @@
     ],
     "properties": {
         "electrodeArray": {
-            "_instruction": "Add the Array used.",
+            "_instruction": "Add the electrode array used.",
             "_linkedTypes": "https://openminds.ebrains.eu/ephys/ElectrodeArray"
         },
         "coordinatePoint": {
             "type": "array",
-            "minItems": 1,
+            "minItems": 2,
             "uniqueItems": true,
-            "_instruction": "Add the central coordinate of each electrode of this array, in the same order that hase been spesified eletrode array card.",
+            "_instruction": "Add the central coordinate of each electrode of this array, in the same order that has been specified by letrero identifier in electrode array card.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/sands/CoordinatePoint"
             ]
@@ -24,7 +24,7 @@
             "type": "array",
             "minItems": 1,
             "uniqueItems": true,
-            "_instruction": "Add one or several files in which the electrode contact is defined in.",
+            "_instruction": "Add one or several files containing any additional information about this the electrode array.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/File",
                 "https://openminds.ebrains.eu/core/FileBundle"
@@ -34,7 +34,7 @@
             "type": "array",
             "minItems": 2,
             "uniqueItems": true,
-            "_instruction": "Enter the contact resistance of each electrode of this array, in the same order that hase been spesified eletrode array card..",
+            "_instruction": "Enter the contact resistance of each electrode of this array, in the same order that has been specified by letrero identifier in electrode array card.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"

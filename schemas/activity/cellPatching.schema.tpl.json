@@ -3,19 +3,20 @@
     "_extends": "/core/research/ExperimentalActivity.schema.tpl.json",
     "properties": {
         "tissueBathSolution": {
-            "_instruction": "Solution used in the bath",
+            "_instruction": "Add the chemical mixture used for the bath solution.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/chemicals/chemicalMixture"
             ]
         },
         "bathTemperature": {
-            "_instruction": "Add the temperature of the bath solution.",
+            "_instruction": "Enter the temperature of the bath solution.",
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue",
                 "https://openminds.ebrains.eu/core/QuantitativeValueRange"
             ]
         },
         "input": {
+            "_instruction": "Add the specimen used for this cell patching.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/TissueSampleState",
                 "https://openminds.ebrains.eu/core/SubjectState"
@@ -36,10 +37,10 @@
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/ephys/PipetteUsage"
             ],
-            "_instruction": "The pipettes that have been used to patch this cell"
+            "_instruction": "Add the pipettes that have been used by this patching activity."
         },
         "setup": {
-            "_instruction": "Enter any other devices taht have been a part of important parts of the patch rig",
+            "_instruction": "Add the setup that have been used for this cell patching.",
             "_linkedCategories": [
                 "https://openminds.ebrains.eu/core/Setup"
             ]
@@ -51,7 +52,7 @@
             ]
         },
         "variation": {
-            "_instruction": "Enter the patch-clamp variation used",
+            "_instruction": "Add the patch-clamp variation used",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/PatchClampVariation"
             ]

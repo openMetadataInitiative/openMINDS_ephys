@@ -19,12 +19,14 @@
             ]
         },
         "input": {
+            "_instruction": "Add the specimen used by this activity.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/TissueSampleState",
                 "https://openminds.ebrains.eu/core/SubjectState"
             ]
         },
         "output": {
+            "_instruction": "Add the specimen created by this activity.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/TissueSampleState",
                 "https://openminds.ebrains.eu/core/SubjectState"
