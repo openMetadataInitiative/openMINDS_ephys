@@ -9,7 +9,7 @@
     "properties": {
         "electrodeArray": {
             "_instruction": "Add the Array used.",
-            "_linkedTypes": "https://openminds.ebrains.eu/ephys/Electrode"
+            "_linkedTypes": "https://openminds.ebrains.eu/ephys/ElectrodeArray"
         },
         "coordinatePoint": {
             "type": "array",
