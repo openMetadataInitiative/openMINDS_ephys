@@ -1,21 +1,21 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/Pipette",
-    "_categories": [
-        "setupComponent"
-    ],
-    "_extends": "/core/products/Device.schema.tpl.json",
-    "properties": {
-        "externalDiameter": {
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue"
-            ],
-            "_instruction": "External diameter of the pipette"
-        },
-        "internalDiameter": {
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue"
-            ],
-            "_instruction": "Internal diameter of the pipette"
-        }
+  "_type": "https://openminds.ebrains.eu/ephys/Pipette",
+  "_categories": [
+    "setupComponent"
+  ],
+  "_extends": "/core/products/Device.schema.tpl.json",
+  "properties": {
+    "externalDiameter": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "External diameter of the pipette"
+    },
+    "internalDiameter": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Internal diameter of the pipette"
     }
+  }
 }

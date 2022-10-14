@@ -1,56 +1,56 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/Recording",
-    "required": [
-        "samplingFrequency",
-        "channel",
-        "recordedWith",
-        "dataLocation"
-    ],
-    "properties": {
-        "internalIdentifier": {
-            "type": "string",
-            "_instruction": "Enter the identifier used to identify data associated with this recording within the file or file bundle."
-        },
-        "name": {
-            "type": "string",
-            "_instruction": "Enter a name for this recording."
-        },
-        "channel": {
-            "_instruction": "Enter all the recording channels contained in this recording.",
-            "type": "array",
-            "minItems": 1,
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/ephys/Channel"
-            ]
-        },
-        "samplingFrequency": {
-            "_instruction": "Sampling frequency (inverted of time step) of data.",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue"
-            ]
-        },
-        "previousRecording": {
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/Recording"
-            ],
-            "_instruction": "If this recording is part of a sequence (sweeps, repetitions), enter the previous recording."
-        },
-        "additionalRemarks": {
-            "type": "string",
-            "_instruction": "Enter any additional remarks about this recording."
-        },
-        "recordedWith": {
-            "_instruction": "Add the device used for this recording.",
-            "_linkedCategories": [
-                "deviceUsage"
-            ]
-        },
-        "dataLocation": {
-            "_instruction": "Add the location of the file or file bundle in which the recorded data is stored.",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/File",
-                "https://openminds.ebrains.eu/core/FileBundle"
-            ]
-        }
+  "_type": "https://openminds.ebrains.eu/ephys/Recording",
+  "required": [
+    "samplingFrequency",
+    "channel",
+    "recordedWith",
+    "dataLocation"
+  ],
+  "properties": {
+    "internalIdentifier": {
+      "type": "string",
+      "_instruction": "Enter the identifier used to identify data associated with this recording within the file or file bundle."
+    },
+    "name": {
+      "type": "string",
+      "_instruction": "Enter a name for this recording."
+    },
+    "channel": {
+      "_instruction": "Enter all the recording channels contained in this recording.",
+      "type": "array",
+      "minItems": 1,
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/ephys/Channel"
+      ]
+    },
+    "samplingFrequency": {
+      "_instruction": "Sampling frequency (inverted of time step) of data.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "previousRecording": {
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/Recording"
+      ],
+      "_instruction": "If this recording is part of a sequence (sweeps, repetitions), enter the previous recording."
+    },
+    "additionalRemarks": {
+      "type": "string",
+      "_instruction": "Enter any additional remarks about this recording."
+    },
+    "recordedWith": {
+      "_instruction": "Add the device used for this recording.",
+      "_linkedCategories": [
+        "deviceUsage"
+      ]
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the recorded data is stored.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle"
+      ]
     }
+  }
 }
