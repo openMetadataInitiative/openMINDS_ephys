@@ -1,34 +1,36 @@
 {
-    "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacement",
-    "_extends": "/core/research/experimentalActivity.schema.tpl.json",
-    "required": [
-        "electrodes"
-    ],
-    "properties": {
-        "electrodes": {
-            "_instruction": "Add the electrodes placed by this activity",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
-                "https://openminds.ebrains.eu/ephys/ElectrodeUsage"
-            ]
-        },
-        "targetPosition": {
-            "_instruction": "Add the general target position for the electrode or electrode array.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/sands/AnatomicalTargetPosition"
-            ]
-        },
-        "input": {
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/TissueSampleState",
-                "https://openminds.ebrains.eu/core/SubjectState"
-            ]
-        },
-        "output": {
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/TissueSampleState",
-                "https://openminds.ebrains.eu/core/SubjectState"
-            ]
-        }
+  "_type": "https://openminds.ebrains.eu/ephys/DevicePlacement",
+  "_extends": "/core/research/experimentalActivity.schema.tpl.json",
+  "required": [
+    "device"
+  ],
+  "properties": {
+    "device": {
+      "_instruction": "Add the electrodes placed by this activity",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
+        "https://openminds.ebrains.eu/ephys/ElectrodeUsage"
+      ]
+    },
+    "targetPosition": {
+      "_instruction": "Add the general target position for the electrode or electrode array.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/sands/AnatomicalTargetPosition"
+      ]
+    },
+    "input": {
+      "_instruction": "Add the specimen used by this activity.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/TissueSampleState",
+        "https://openminds.ebrains.eu/core/SubjectState"
+      ]
+    },
+    "output": {
+      "_instruction": "Add the specimen created by this activity.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/TissueSampleState",
+        "https://openminds.ebrains.eu/core/SubjectState"
+      ]
     }
+  }
 }
