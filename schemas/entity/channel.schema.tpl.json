@@ -1,7 +1,8 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/Channel",
   "required": [
-    "internalIdentifier"
+    "internalIdentifier",
+    "unitOfMeasurement"
   ],
   "properties": {
     "internalIdentifier": {

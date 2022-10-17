@@ -8,10 +8,29 @@
     "pipetteSolution"
   ],
   "properties": {
+    "lookupLabel": {
+      "type": "string",
+      "_instruction": "Enter a lookup label for this pipette usage."
+    },
     "pipette": {
       "_instruction": "Add the pipette used.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/ephys/Pipette"
+      ]
+    },
+    "coordinatePoint": {
+      "_instruction": "Add the central coordinate of the pipette tip.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+      ]
+    },
+    "anatomicalLocation": {
+      "_instruction": "Add the anatomical entity in which the pipette tip is located.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/UBERONParcellation",
+        "https://openminds.ebrains.eu/sands/CustomAnatomicalEntity",
+        "https://openminds.ebrains.eu/sands/ParcellationEntity",
+        "https://openminds.ebrains.eu/sands/ParcellationEntityVersion"
       ]
     },
     "pipetteResistance": {
@@ -94,7 +113,8 @@
       "_instruction": "Add the compound used in the pipette to label the cell.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance"
+        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
+        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
       ]
     }
   }

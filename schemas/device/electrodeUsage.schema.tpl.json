@@ -7,6 +7,10 @@
     "electrode"
   ],
   "properties": {
+    "lookupLabel": {
+      "type": "string",
+      "_instruction": "Enter a lookup label for this electrode usage."
+    },
     "electrode": {
       "_instruction": "Add the electrode used.",
       "_linkedTypes": "https://openminds.ebrains.eu/ephys/Electrode"
@@ -15,6 +19,15 @@
       "_instruction": "Add the central coordinate of this electrode contact.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/sands/CoordinatePoint"
+      ]
+    },
+    "anatomicalLocation": {
+      "_instruction": "Add the anatomical entity in which the electrode contact is located.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/UBERONParcellation",
+        "https://openminds.ebrains.eu/sands/CustomAnatomicalEntity",
+        "https://openminds.ebrains.eu/sands/ParcellationEntity",
+        "https://openminds.ebrains.eu/sands/ParcellationEntityVersion"
       ]
     },
     "additionalInformation": {
@@ -35,7 +48,7 @@
       ]
     },
     "usedSpecimen": {
-      "_instruction": "Add the tissue or subject used with this eletrode usage",
+      "_instruction": "Add the tissue or subject used with this electrode usage",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/TissueSampleState",
         "https://openminds.ebrains.eu/core/SubjectState"

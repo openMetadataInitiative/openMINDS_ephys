@@ -1,0 +1,4 @@
+{
+  "_type": "https://openminds.ebrains.eu/ephys/CellPatching",
+  "_extends": "/specimenPrep/schemas/activity/DevicePlacement.schema.tpl.json"
+}

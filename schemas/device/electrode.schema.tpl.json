@@ -4,10 +4,11 @@
     "setupComponent"
   ],
   "_extends": "/core/schemas/products/Device.schema.tpl.json",
-  "required": [
-    "internalIdentifier"
-  ],
   "properties": {
+    "lookupLabel": {
+      "type": "string",
+      "_instruction": "Enter a lookup label for this electrode."
+    },
     "internalIdentifier": {
       "type": "string",
       "_instruction": "Enter the identifier used for this electrode within the file it is stored in."
@@ -16,14 +17,16 @@
       "_instruction": "Add the insulator material of this electrode.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance"
+        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
+        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
       ]
     },
     "conductorMaterial": {
       "_instruction": "Add the conductor material of this electrode.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance"
+        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
+        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
       ]
     },
     "intrinsicResistance": {
