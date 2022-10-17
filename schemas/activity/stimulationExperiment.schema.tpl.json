@@ -1,6 +1,6 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/StimulationExperiment",
-  "_extends": "/core/research/experimentalActivity.schema.tpl.json",
+  "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "input",
     "output",
@@ -9,7 +9,7 @@
   "properties": {
     "internalIdentifier": {
       "type": "string",
-      "_instruction": "Laboratory identifier of the experiment"
+      "_instruction": "Enter the laboratory identifier of the experiment."
     },
     "input": {
       "type": "array",

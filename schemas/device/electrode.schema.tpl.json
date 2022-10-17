@@ -3,7 +3,7 @@
   "_categories": [
     "setupComponent"
   ],
-  "_extends": "/core/products/Device.schema.tpl.json",
+  "_extends": "/core/schemas/products/Device.schema.tpl.json",
   "required": [
     "internalIdentifier"
   ],
@@ -15,15 +15,15 @@
     "insulatorMaterial": {
       "_instruction": "Add the insulator material of this electrode.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/chemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/chemicalSubstance"
+        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
+        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance"
       ]
     },
     "conductorMaterial": {
       "_instruction": "Add the conductor material of this electrode.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/chemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/chemicalSubstance"
+        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
+        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance"
       ]
     },
     "intrinsicResistance": {
