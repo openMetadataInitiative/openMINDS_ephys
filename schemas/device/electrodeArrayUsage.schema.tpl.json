@@ -15,11 +15,20 @@
       "_instruction": "Add the electrode array used.",
       "_linkedTypes": "https://openminds.ebrains.eu/ephys/ElectrodeArray"
     },
+    "usedElectrode": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter the identifier of all used electrodes.",
+      "items": {
+        "type": "string"
+      }
+    },
     "coordinatePoint": {
       "type": "array",
       "minItems": 2,
       "uniqueItems": true,
-      "_instruction": "Add the central coordinate of each electrode of this array, in the same order that has been specified by letrero identifier in electrode array card.",
+      "_instruction": "Add the central coordinate of each electrode of this array, in the same order that has been specified by electrode identifier in electrode array card.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/sands/CoordinatePoint"
       ]
