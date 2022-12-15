@@ -2,9 +2,15 @@
   "_type": "https://openminds.ebrains.eu/ephys/RecordingActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "properties": {
-    "internalIdentifier": {
-      "type": "string",
-      "_instruction": "Enter the laboratory identifier of the experiment."
+    "device": {
+      "type": "array",
+      "minItems": 1,
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/PipetteUsage",
+        "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
+        "https://openminds.ebrains.eu/ephys/ElectrodeUsage"
+      ],
+      "_instruction": "Add the device used for this recording activity."
     },
     "input": {
       "type": "array",
@@ -18,15 +24,9 @@
         "https://openminds.ebrains.eu/core/SubjectState"
       ]
     },
-    "device": {
-      "type": "array",
-      "minItems": 1,
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/PipetteUsage",
-        "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
-        "https://openminds.ebrains.eu/ephys/ElectrodeUsage"
-      ],
-      "_instruction": "Add the device used for this recording activity."
+    "internalIdentifier": {
+      "type": "string",
+      "_instruction": "Enter the laboratory identifier of the experiment."
     }
   }
 }
