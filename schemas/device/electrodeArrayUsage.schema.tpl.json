@@ -7,30 +7,14 @@
     "electrodeArray"
   ],
   "properties": {
-    "lookupLabel": {
-      "type": "string",
-      "_instruction": "Enter a lookup label for this electrode array usage."
-    },
-    "electrodeArray": {
-      "_instruction": "Add the electrode array used.",
-      "_linkedTypes": "https://openminds.ebrains.eu/ephys/ElectrodeArray"
-    },
-    "usedElectrode": {
+    "additionalInformation": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "_instruction": "Enter the identifier of all used electrodes.",
-      "items": {
-        "type": "string"
-      }
-    },
-    "coordinatePoint": {
-      "type": "array",
-      "minItems": 2,
-      "uniqueItems": true,
-      "_instruction": "Add the central coordinate of each electrode of this array, in the same order that has been specified by electrode identifier in electrode array card.",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+      "_instruction": "Add one or several files containing any additional information about this the electrode array.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle"
       ]
     },
     "anatomicalLocation": {
@@ -45,16 +29,6 @@
         "https://openminds.ebrains.eu/sands/ParcellationEntityVersion"
       ]
     },
-    "additionalInformation": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "_instruction": "Add one or several files containing any additional information about this the electrode array.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle"
-      ]
-    },
     "contactResistance": {
       "type": "array",
       "minItems": 2,
@@ -64,6 +38,32 @@
         "https://openminds.ebrains.eu/core/QuantitativeValue",
         "https://openminds.ebrains.eu/core/QuantitativeValueRange"
       ]
+    },
+    "coordinatePoint": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "_instruction": "Add the central coordinate of each electrode of this array, in the same order that has been specified by electrode identifier in electrode array card.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+      ]
+    },
+    "electrodeArray": {
+      "_instruction": "Add the electrode array used.",
+      "_linkedTypes": "https://openminds.ebrains.eu/ephys/ElectrodeArray"
+    },
+    "lookupLabel": {
+      "type": "string",
+      "_instruction": "Enter a lookup label for this electrode array usage."
+    },
+    "usedElectrode": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter the identifier of all used electrodes.",
+      "items": {
+        "type": "string"
+      }
     },
     "usedSpecimen": {
       "_instruction": "Add the tissue or subject used with this electrode array usage",
