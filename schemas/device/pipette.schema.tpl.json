@@ -5,14 +5,6 @@
   ],
   "_extends": "/core/schemas/products/Device.schema.tpl.json",
   "properties": {
-    "lookupLabel": {
-      "type": "string",
-      "_instruction": "Enter a lookup label for this pipette."
-    },
-    "internalIdentifier": {
-      "type": "string",
-      "_instruction": "Enter the identifier used for this pipette within the file it is stored in."
-    },
     "externalDiameter": {
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
@@ -24,6 +16,14 @@
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ],
       "_instruction": "Enter the internal diameter of the pipette"
+    },
+    "lookupLabel": {
+      "type": "string",
+      "_instruction": "Enter a lookup label for this pipette."
+    },
+    "internalIdentifier": {
+      "type": "string",
+      "_instruction": "Enter the identifier used for this pipette within the file it is stored in."
     },
     "material": {
       "_instruction": "Add the material of which the pipette is composed.",
