@@ -41,7 +41,9 @@
     },
     "electrode": {
       "_instruction": "Add the electrode used.",
-      "_linkedTypes": "https://openminds.ebrains.eu/ephys/Electrode"
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/Electrode"
+      ]
     },
     "lookupLabel": {
       "type": "string",
