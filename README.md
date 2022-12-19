@@ -4,7 +4,7 @@
 
 # openMINDS_ephys
 
-The **openMINDS_ephys** repository is part of the **open** **M**etadata **I**nitiative for **N**euroscience **D**ata Structures (**openMINDS**). It extends openMINDS core, by providing schema-templates for adding detailed metadata specific to electrophysiology recordings to the neuroscience research products registered in the EBRAINS Knowledge Graph.
+The **openMINDS_ephys** repository is part of the **open** **M**etadata **I**nitiative for **N**euroscience **D**ata Structures (**openMINDS**). It extends openMINDS core, by providing schema-templates for adding detailed metadata specific to electrophysiology experiments.
 
 The major versions are developed and maintained in different version-branches. The default branch is always the latest version-branch.
 **Each version can be accessed by checking out the corresponding version-branch.** No major version branch has yet been released. This README describes the development branch ("main").
