@@ -6,7 +6,7 @@
 
 The **openMINDS_ephys** repository is part of the **open** **M**etadata **I**nitiative for **N**euroscience **D**ata Structures (**openMINDS**). It extends openMINDS, by providing metadata schemas for in-depth descriptions of electrophysiology experiments.
 
-For more information please go to the main openMINDS repository: https://github.com/HumanBrainProject/openMINDS
+For more information please go to the [main openMINDS repository](https://github.com/HumanBrainProject/openMINDS).
 
 ## How to contribute
 Please check our [contribution document](https://github.com/HumanBrainProject/openMINDS/blob/main/CONTRIBUTING.md).
