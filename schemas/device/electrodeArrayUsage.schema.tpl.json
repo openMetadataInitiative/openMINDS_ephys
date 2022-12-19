@@ -50,7 +50,9 @@
     },
     "electrodeArray": {
       "_instruction": "Add the electrode array used.",
-      "_linkedTypes": "https://openminds.ebrains.eu/ephys/ElectrodeArray"
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/ElectrodeArray"
+      ]
     },
     "lookupLabel": {
       "type": "string",
