@@ -1,5 +1,9 @@
-<a href="https://github.com/HumanBrainProject/openMINDS_ephys/blob/694b1773f35151085cfb029f7e2178f776e86463/img/light_openMINDS-ephys-logo.png">
-    <img src="https://github.com/HumanBrainProject/openMINDS_ephys/blob/694b1773f35151085cfb029f7e2178f776e86463/img/light_openMINDS-ephys-logo.png" alt="openMINDS computation logo" title="openMINDS computation" align="right" height="70" />
+<a href="/img/light_openMINDS-ephys-logo.png">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="/img/dark_openMINDS-ephys-logo.png">
+      <source media="(prefers-color-scheme: light)" srcset="/img/light_openMINDS-ephys-logo.png">
+      <img alt="openMINDS electrophysiology logo" src="/img/light_openMINDS-ephys-logo.png" title="openMINDS electrophysiology" align="right" height="70">
+    </picture>
 </a>
 
 # openMINDS_ephys
