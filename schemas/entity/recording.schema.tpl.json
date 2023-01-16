@@ -21,7 +21,7 @@
     },
     "dataLocation": {
       "_instruction": "Add the location of the file or file bundle in which the recorded data is stored.",
-      "_embeddedTypes": [
+      "_linkedTypes": [
         "https://openminds.ebrains.eu/core/File",
         "https://openminds.ebrains.eu/core/FileBundle"
       ]
