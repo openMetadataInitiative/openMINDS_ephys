@@ -5,8 +5,8 @@
     "setupComponent"
   ],
   "required": [
-    "numberOfElectrodes",
-    "electrodeIdentifier"
+    "electrodeIdentifiers",    
+    "numberOfElectrodes"
   ],
   "properties": {
     "conductorMaterial": {
@@ -17,11 +17,11 @@
         "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
       ]
     },
-    "electrodeIdentifier": {
+    "electrodeIdentifiers": {
       "type": "array",
       "minItems": 2,
       "uniqueItems": true,
-      "_instruction": "Enter the identifier used for each electrode (contact point) of this electrode array. Number of identifiers should match the 'numberOfElectrodes'.",
+      "_instruction": "Enter the identifiers for each electrode of this electrode array. Note that the number of identifiers should match the number of electrodes of the array as stated under 'numberOfElectrodes'.",
       "items": {
         "type": "string"
       }
@@ -36,22 +36,19 @@
     },
     "internalIdentifier": {
       "type": "string",
-      "_instruction": "Enter the identifier used for this electrode array within the file it is stored in."
+      "_instruction": "Enter the identifier (or label) of this electrode array that is used within the corresponding data files to identify this electrode array."
     },
     "intrinsicResistance": {
-      "_instruction": "Enter the intrinsic resistances of this electrode array.",
+      "_instruction": "Enter the intrinsic resistance of this electrode array.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue",
         "https://openminds.ebrains.eu/core/QuantitativeValueRange"
       ]
     },
-    "lookupLabel": {
-      "type": "string",
-      "_instruction": "Enter a lookup label for this electrode array."
-    },
     "numberOfElectrodes": {
       "type": "integer",
-      "_instruction": "Enter the number of electrodes of this array."
+      "minimum": 2,
+      "_instruction": "Enter the number of electrodes that belong to this electrode array."
     }
   }
 }
