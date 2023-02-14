@@ -1,59 +1,30 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
-  "_categories": [
-    "deviceUsage"
-  ],
-  "required": [
-    "electrode"
-  ],
+  "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
-    "additionalInformation": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "_instruction": "Add one or several files containing any additional information about this the electrode.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle"
-      ]
-    },
     "anatomicalLocation": {
-      "_instruction": "Add the anatomical entity in which the electrode contact is located.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/UBERONParcellation",
-        "https://openminds.ebrains.eu/sands/CustomAnatomicalEntity",
-        "https://openminds.ebrains.eu/sands/ParcellationEntity",
-        "https://openminds.ebrains.eu/sands/ParcellationEntityVersion"
+      "_instruction": "Add the anatomical entity that describes the semantic location of the electrode contact best.",
+      "_linkedCategories": [
+        "anatomicalLocation"
       ]
     },
     "contactResistance": {
-      "_instruction": "Enter the resistance of electrode in place.",
+      "_instruction": "Enter the contact resistance of this electrode during its use.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue",
         "https://openminds.ebrains.eu/core/QuantitativeValueRange"
       ]
-    },
-    "coordinatePoint": {
-      "_instruction": "Add the central coordinate of this electrode contact.",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/sands/CoordinatePoint"
-      ]
-    },
-    "electrode": {
+    },    
+    "device": {
       "_instruction": "Add the electrode used.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/ephys/Electrode"
       ]
-    },
-    "lookupLabel": {
-      "type": "string",
-      "_instruction": "Enter a lookup label for this electrode usage."
-    },
-    "usedSpecimen": {
-      "_instruction": "Add the tissue or subject used with this electrode usage",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/TissueSampleState",
-        "https://openminds.ebrains.eu/core/SubjectState"
+    },   
+    "spatialLocation": {
+      "_instruction": "Add the coordinate point that best describes the spatial location of the electrode contact during its use.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/sands/CoordinatePoint"
       ]
     }
   }
