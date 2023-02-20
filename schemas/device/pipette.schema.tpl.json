@@ -1,32 +1,25 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/Pipette",
-  "_categories": [
-    "setupComponent"
-  ],
-  "_extends": "/core/schemas/products/Device.schema.tpl.json",
+  "_extends": "/core/schemas/products/device.schema.tpl.json",
   "properties": {
-    "externalDiameter": {
+    "externalDiameter": {     
+      "_instruction": "Enter the external diameter of the pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "_instruction": "Enter the external diameter of the pipette"
+      ]
     },
-    "internalDiameter": {
+    "internalDiameter": {      
+      "_instruction": "Enter the internal diameter of the pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "_instruction": "Enter the internal diameter of the pipette"
-    },
-    "lookupLabel": {
-      "type": "string",
-      "_instruction": "Enter a lookup label for this pipette."
+      ]
     },
     "internalIdentifier": {
       "type": "string",
-      "_instruction": "Enter the identifier used for this pipette within the file it is stored in."
+      "_instruction": "Enter the identifier (or label) of this pipette that is used within the corresponding data files to identify this pipette."
     },
     "material": {
-      "_instruction": "Add the material of which the pipette is composed.",
+      "_instruction": "Add the material that the pipette is made of.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
         "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
