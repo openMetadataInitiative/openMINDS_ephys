@@ -2,14 +2,14 @@
   "_type": "https://openminds.ebrains.eu/ephys/Channel",
   "required": [
     "internalIdentifier",
-    "unitOfMeasurement"
+    "unit"
   ],
   "properties": {
     "internalIdentifier": {
       "type": "string",
-      "_instruction": "Enter any internal identifier used for this channel."
+      "_instruction": "Enter the identifier (or label) of this channel that is used within the corresponding data files to identify this channel."
     },
-    "unitOfMeasurement": {
+    "unit": {
       "_instruction": "Add the unit of measurement for this channel.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
