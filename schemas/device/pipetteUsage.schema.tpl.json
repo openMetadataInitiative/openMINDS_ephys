@@ -1,24 +1,18 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/PipetteUsage",
-  "_categories": [
-    "deviceUsage"
-  ],
+  "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",  
   "required": [
-    "pipette",
     "pipetteSolution"
   ],
   "properties": {
     "anatomicalLocation": {
-      "_instruction": "Add the anatomical entity in which the pipette tip is located.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/UBERONParcellation",
-        "https://openminds.ebrains.eu/sands/CustomAnatomicalEntity",
-        "https://openminds.ebrains.eu/sands/ParcellationEntity",
-        "https://openminds.ebrains.eu/sands/ParcellationEntityVersion"
+      "_instruction": "Add the anatomical entity that semantically best describes the anatomical location of the pipette tip.",
+      "_linkedCategories": [
+        "anatomicalLocation"
       ]
-    },
+    },     
     "chlorideReversalPotential": {
-      "_instruction": "The chloride reversal potential(s) calculated from the intracellular solution(s) of the pipette(s).",
+      "_instruction": "Enter all chloride reversal potentials for the intracellular solution(s) of the pipette measured during its use.",
       "type": "array",
       "minItems": 1,
       "_embeddedTypes": [
@@ -26,31 +20,37 @@
       ]
     },
     "compensationCurrent": {
-      "_instruction": "Enter the compensation current for the series resistance.",
+      "_instruction": "Enter the compensation current for the series resistance of the pipette measured during its use.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
       ]
     },
-    "coordinatePoint": {
-      "_instruction": "Add the central coordinate of the pipette tip.",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+    "device": {
+      "_instruction": "Add the pipette used.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/Pipette"
       ]
-    },
+    },      
     "endMembranePotential": {
-      "_instruction": "Membrane potential of patched cell at the end of recording",
+      "_instruction": "Enter the membrane potential of e.g., a patched cell at the end of a recording measured during the use of this pipette.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/Measurement"
+      ]
+    },    
+    "holdingPotential": {
+      "_instruction": "Enter the holding membrane potential of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
       ]
     },
     "inputResistance": {
-      "_instruction": "Enter the input resistance of the patched cell",
+      "_instruction": "Enter the input resistance of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
       ]
     },
     "labelingCompound": {
-      "_instruction": "Add the compound used in the pipette to label the cell.",
+      "_instruction": "Add the used compound for labelling e.g., a patched cell during the use of this pipette. ",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
         "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
@@ -58,63 +58,46 @@
       ]
     },
     "liquidJunctionPotential": {
-      "_instruction": "Liquid junction potential of patch",
+      "_instruction": "Enter the liquid junction potential of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
-      ]
-    },
-    "lookupLabel": {
-      "type": "string",
-      "_instruction": "Enter a lookup label for this pipette usage."
-    },
-    "measuredHoldingPotential": {
-      "_instruction": "Enter the measured holding potential of the patched cell",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
-      ]
-    },
-    "pipette": {
-      "_instruction": "Add the pipette used.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/Pipette"
       ]
     },
     "pipetteResistance": {
-      "_instruction": "Enter the resistance of the pipette used.",
+      "_instruction": "Enter the resistance of the pipette during its use.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue",
         "https://openminds.ebrains.eu/core/QuantitativeValueRange"
       ]
     },
     "pipetteSolution": {
-      "_instruction": "Solution used to fill the pipette",
+      "_instruction": "Enter the solution with which the pipette was filled during its use.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/chemicals/ChemicalMixture"
       ]
     },
     "sealResistance": {
-      "_instruction": "Seal resistance of patch",
+      "_instruction": "Enter the seal resistance of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
       ]
     },
     "seriesResistance": {
-      "_instruction": "Enter the series resistance compensation while patching the cell.",
+      "_instruction": "Enter the series resistance of the pipette measured during its use.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
       ]
-    },
+    }, 
+    "spatialLocation": {
+      "_instruction": "Add the coordinate point that best describes the spatial location of the pipette tip during its use.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+      ]
+    },    
     "startMembranePotential": {
-      "_instruction": "Membrane potential of patched cell at the beginning of recording",
+      "_instruction": "Enter the membrane potential of e.g., a patched cell at the beginning of a recording measured during the use of this pipette.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/Measurement"
-      ]
-    },
-    "usedSpecimen": {
-      "_instruction": "Add the tissue or subject used with this pipette usage",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/TissueSampleState",
-        "https://openminds.ebrains.eu/core/SubjectState"
       ]
     }
   }
