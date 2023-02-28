@@ -9,7 +9,7 @@
   "properties": {
     "additionalRemarks": {
       "type": "string",
-      "_instruction": "Enter any additional remarks concering this recording."
+      "_instruction": "Enter any additional remarks concerning this recording."
     },
     "channel": {
       "type": "array",
