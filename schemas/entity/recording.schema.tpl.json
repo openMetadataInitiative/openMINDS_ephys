@@ -1,20 +1,21 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/Recording",
   "required": [
-    "samplingFrequency",
     "channel",
-    "recordedWith",
-    "dataLocation"
+    "dataLocation",    
+    "recordedWith",   
+    "samplingFrequency"
   ],
   "properties": {
     "additionalRemarks": {
       "type": "string",
-      "_instruction": "Enter any additional remarks about this recording."
+      "_instruction": "Enter any additional remarks concerning this recording."
     },
     "channel": {
-      "_instruction": "Enter all the recording channels contained in this recording.",
       "type": "array",
-      "minItems": 1,
+      "minItems": 1,      
+      "uniqueItems": true,
+      "_instruction": "Enter all channels used for this recording.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/ephys/Channel"
       ]
@@ -28,26 +29,26 @@
     },
     "internalIdentifier": {
       "type": "string",
-      "_instruction": "Enter the identifier used to identify data associated with this recording within the file or file bundle."
+      "_instruction": "Enter the identifier (or label) of this recording that is used within the corresponding data files to identify this recording."
     },
     "name": {
       "type": "string",
-      "_instruction": "Enter a name for this recording."
+      "_instruction": "Enter a descriptive name for this recording."
     },
-    "previousRecording": {
+    "previousRecording": {      
+      "_instruction": "If this recording is part of a sequence of recordings (e.g., multiple repetitions or sweeps), add the recording preceding this recording.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/ephys/Recording"
-      ],
-      "_instruction": "If this recording is part of a sequence (sweeps, repetitions), enter the previous recording."
+      ]
     },
     "recordedWith": {
-      "_instruction": "Add the device used for this recording.",
+      "_instruction": "Add the device used to generate this recording.",
       "_linkedCategories": [
         "deviceUsage"
       ]
     },
     "samplingFrequency": {
-      "_instruction": "Sampling frequency (inverted of time step) of data.",
+      "_instruction": "Enter the sampling frequency of this recording.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]
