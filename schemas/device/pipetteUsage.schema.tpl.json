@@ -6,7 +6,7 @@
   ],
   "properties": {
     "anatomicalLocation": {
-      "_instruction": "Add the anatomical entity that describes the semantic location of the pipette tip best.",
+      "_instruction": "Add the anatomical entity that semantically best describes the anatomical location of the pipette tip.",
       "_linkedCategories": [
         "anatomicalLocation"
       ]
