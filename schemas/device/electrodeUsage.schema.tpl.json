@@ -3,7 +3,7 @@
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
     "anatomicalLocation": {
-      "_instruction": "Add the anatomical entity that describes the semantic location of the electrode contact best.",
+      "_instruction": "Add the anatomical entity that semantically best describes the anatomical location of the electrode contact.",
       "_linkedCategories": [
         "anatomicalLocation"
       ]
