@@ -2,16 +2,25 @@
   "_type": "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
-    "anatomicalLocation": {
+    "anatomicalLocationOfArray": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "_instruction": "Add all anatomical entities that describe the semantic location of the contact point(s) of the electrode array best.",
+      "_instruction": "Add all anatomical entities that semantically best describe the overall anatomical location of the electrode array.",
       "_linkedCategories": [
         "anatomicalLocation"
       ]
     },
-    "contactResistance": {
+    "anatomicalLocationOfElectrodes": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "_instruction": "Add all anatomical entities that semantically best describe the anatomical location of each electrode contact of this array during its use, in the same order that the electrode identifiers for this electrode array have been specified.",
+      "_linkedCategories": [
+        "anatomicalLocation"
+      ]
+    },
+    "contactResistances": {
       "type": "array",
       "minItems": 2,
       "uniqueItems": true,
@@ -27,7 +36,7 @@
         "https://openminds.ebrains.eu/ephys/ElectrodeArray"
       ]
     },   
-    "spatialLocation": {
+    "spatialLocationOfElectrodes": {
       "type": "array",
       "minItems": 2,
       "uniqueItems": true,
@@ -40,7 +49,7 @@
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
-      "_instruction": "Enter the identifiers of all electrodes during the use of this electrode array.",
+      "_instruction": "Enter the identifiers of all electrodes that are actually in use for this array.",
       "items": {
         "type": "string"
       }
