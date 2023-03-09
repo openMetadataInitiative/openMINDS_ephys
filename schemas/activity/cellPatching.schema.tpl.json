@@ -1,6 +1,6 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/CellPatching",
-  "_extends": "/specimenPrep/schemas/activity/DevicePlacement.schema.tpl.json",
+  "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json",
   "properties": {
     "bathTemperature": {
       "_instruction": "Enter the temperature of the bath solution.",
@@ -10,13 +10,12 @@
       ]
     },
     "device": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all patch pipettes placed during this activity.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/ephys/PipetteUsage"
-      ]
-    },
-    "output": {
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/TissueSampleState"
       ]
     },
     "tissueBathSolution": {

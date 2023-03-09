@@ -1,4 +1,16 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacement",
-  "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json"
+  "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json",
+  "properties": {
+    "device": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all electrodes placed during this activity.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
+        "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage"
+      ]
+    }
+  }
 }
