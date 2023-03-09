@@ -1,6 +1,6 @@
 {
   "_type": "https://openminds.ebrains.eu/ephys/ElectrodeArray",
-  "_extends": "/core/schemas/research/products/device.schema.tpl.json",
+  "_extends": "/core/schemas/products/device.schema.tpl.json",
   "_categories": [
     "setupComponent"
   ],
