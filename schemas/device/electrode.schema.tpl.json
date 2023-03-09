@@ -3,7 +3,7 @@
   "_categories": [
     "setupComponent"
   ],
-  "_extends": "/core/schemas/products/Device.schema.tpl.json",
+  "_extends": "/core/schemas/products/device.schema.tpl.json",
   "properties": {
     "conductorMaterial": {
       "_instruction": "Add the conductor material of this electrode.",
