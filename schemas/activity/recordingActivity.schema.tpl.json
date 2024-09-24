@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/RecordingActivity",
+  "_type": "ephys:RecordingActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "properties": {
     "device": {
@@ -8,17 +8,17 @@
       "uniqueItems": true,
       "_instruction": "Add all devices used during this recording activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage",
-        "https://openminds.ebrains.eu/ephys/ElectrodeUsage",        
-        "https://openminds.ebrains.eu/ephys/PipetteUsage"
+        "ephys:ElectrodeArrayUsage",
+        "ephys:ElectrodeUsage",        
+        "ephys:PipetteUsage"
       ]
     },
     "input": {
       "_linkedTypes": [       
-        "https://openminds.ebrains.eu/core/SubjectGroupState",
-        "https://openminds.ebrains.eu/core/SubjectState",
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState"
+        "core:SubjectGroupState",
+        "core:SubjectState",
+        "core:TissueSampleCollectionState",
+        "core:TissueSampleState"
       ]
     },
     "internalIdentifier": {

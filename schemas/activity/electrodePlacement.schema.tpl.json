@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/ElectrodePlacement",
+  "_type": "ephys:ElectrodePlacement",
   "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json",
   "properties": {
     "device": {
@@ -8,8 +8,8 @@
       "uniqueItems": true,
       "_instruction": "Add all electrodes placed during this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
-        "https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage"
+        "ephys:ElectrodeUsage",
+        "ephys:ElectrodeArrayUsage"
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/Recording",
+  "_type": "ephys:Recording",
   "required": [
     "channel",
     "dataLocation",    
@@ -17,14 +17,14 @@
       "uniqueItems": true,
       "_instruction": "Enter all channels used for this recording.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/ephys/Channel"
+        "ephys:Channel"
       ]
     },
     "dataLocation": {
       "_instruction": "Add the location of the file or file bundle in which the recorded data is stored.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle"
+        "core:File",
+        "core:FileBundle"
       ]
     },
     "internalIdentifier": {
@@ -38,7 +38,7 @@
     "previousRecording": {      
       "_instruction": "If this recording is part of a sequence of recordings (e.g., multiple repetitions or sweeps), add the recording preceding this recording.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/Recording"
+        "ephys:Recording"
       ]
     },
     "recordedWith": {
@@ -50,7 +50,7 @@
     "samplingFrequency": {
       "_instruction": "Enter the sampling frequency of this recording.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     }
   }

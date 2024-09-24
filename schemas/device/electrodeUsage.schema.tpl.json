@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/ElectrodeUsage",
+  "_type": "ephys:ElectrodeUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
     "anatomicalLocation": {
@@ -11,14 +11,14 @@
     "contactResistance": {
       "_instruction": "Enter the contact resistance of this electrode during its use.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     },    
     "device": {
       "_instruction": "Add the electrode used.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/Electrode"
+        "ephys:Electrode"
       ]
     },   
     "spatialLocation": {

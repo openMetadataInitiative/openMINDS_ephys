@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/PipetteUsage",
+  "_type": "ephys:PipetteUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",  
   "required": [
     "pipetteSolution"
@@ -16,76 +16,76 @@
       "type": "array",
       "minItems": 1,
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },
     "compensationCurrent": {
       "_instruction": "Enter the compensation current for the series resistance of the pipette measured during its use.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },
     "device": {
       "_instruction": "Add the pipette used.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/Pipette"
+        "ephys:Pipette"
       ]
     },      
     "endMembranePotential": {
       "_instruction": "Enter the membrane potential of e.g., a patched cell at the end of a recording measured during the use of this pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },    
     "holdingPotential": {
       "_instruction": "Enter the holding membrane potential of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },
     "inputResistance": {
       "_instruction": "Enter the input resistance of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },
     "labelingCompound": {
       "_instruction": "Add the used compound for labelling e.g., a patched cell during the use of this pipette. ",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
-        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
+        "chemicals:ChemicalMixture",
+        "chemicals:ChemicalSubstance",
+        "controlledTerms:MolecularEntity"
       ]
     },
     "liquidJunctionPotential": {
       "_instruction": "Enter the liquid junction potential of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },
     "pipetteResistance": {
       "_instruction": "Enter the resistance of the pipette during its use.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     },
     "pipetteSolution": {
       "_instruction": "Enter the solution with which the pipette was filled during its use.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture"
+        "chemicals:ChemicalMixture"
       ]
     },
     "sealResistance": {
       "_instruction": "Enter the seal resistance of e.g., a patched cell measured during the use of this pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     },
     "seriesResistance": {
       "_instruction": "Enter the series resistance of the pipette measured during its use.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     }, 
     "spatialLocation": {
@@ -97,7 +97,7 @@
     "startMembranePotential": {
       "_instruction": "Enter the membrane potential of e.g., a patched cell at the beginning of a recording measured during the use of this pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/Measurement"
+        "core:Measurement"
       ]
     }
   }

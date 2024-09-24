@@ -1,12 +1,12 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/CellPatching",
+  "_type": "ephys:CellPatching",
   "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json",
   "properties": {
     "bathTemperature": {
       "_instruction": "Enter the temperature of the bath solution.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     },
     "device": {
@@ -15,19 +15,19 @@
       "uniqueItems": true,
       "_instruction": "Add all patch pipettes placed during this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/ephys/PipetteUsage"
+        "ephys:PipetteUsage"
       ]
     },
     "tissueBathSolution": {
       "_instruction": "Add the chemical mixture used as bath solution during this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture"
+        "chemicals:ChemicalMixture"
       ]
     },
     "variation": {
       "_instruction": "Add the patch-clamp variation used during this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/PatchClampVariation"
+        "controlledTerms:PatchClampVariation"
       ]
     }
   }

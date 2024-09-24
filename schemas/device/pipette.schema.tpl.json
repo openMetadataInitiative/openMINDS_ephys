@@ -1,17 +1,17 @@
 {
-  "_type": "https://openminds.ebrains.eu/ephys/Pipette",
+  "_type": "ephys:Pipette",
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "properties": {
     "externalDiameter": {     
       "_instruction": "Enter the external diameter of the pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     },
     "internalDiameter": {      
       "_instruction": "Enter the internal diameter of the pipette.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     },
     "internalIdentifier": {
@@ -21,9 +21,9 @@
     "material": {
       "_instruction": "Add the material that the pipette is made of.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ChemicalSubstance",
-        "https://openminds.ebrains.eu/controlledTerms/MolecularEntity"
+        "chemicals:ChemicalMixture",
+        "chemicals:ChemicalSubstance",
+        "controlledTerms:MolecularEntity"
       ]
     }
   }
