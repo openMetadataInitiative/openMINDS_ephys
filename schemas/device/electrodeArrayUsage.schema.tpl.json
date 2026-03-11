@@ -42,7 +42,7 @@
       "uniqueItems": true,
       "_instruction": "Add all coordinate points that best describe the spatial location of each electrode contact of this array during its use, in the same order that the electrode identifiers for this electrode array have been specified.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+        "sands:CoordinatePoint"
       ]
     },
     "usedElectrode": {
