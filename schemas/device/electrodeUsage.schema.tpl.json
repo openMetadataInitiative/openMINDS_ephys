@@ -24,7 +24,7 @@
     "spatialLocation": {
       "_instruction": "Add the coordinate point that best describes the spatial location of the electrode contact during its use.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/sands/CoordinatePoint"
+        "sands:CoordinatePoint"
       ]
     }
   }
